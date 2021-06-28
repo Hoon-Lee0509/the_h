@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+/* tag reset */
+body, ul, h1, h2, h3, h4, h5, h6, p, a{margin: 0;padding: 0px;}
+ul{list-style: none;}
+h1, h2, h3, h4, h5, h6{font-size: inherit; font-family: inherit;font-weight: inherit;}
+a:link, a:visited, a:hover, a:active{color: inherit; text-decoration: none;}
+button{border: none; background: none; cursor: pointer;}
+address{font-family: inherit; font-style: normal;}
+img{border: none; vertical-align: top;}
+
+/* common class */
+.blind{width: 1px; height: 1px; overflow: hidden; border: none; position: absolute; clip: rect(1px, 1px, 1px, 1px); clip-path: inset(50%);}
+.d_f{display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex;}
+.f_l{float: left;}
+.f_r{float: right;}
+.clearfix::after{content: ""; display: block; clear: both;}
+#skip a{position: absolute; top: 0; left: -9999px; z-index: 1000;}
+#skip a:focus{left: 0; width: 100%; height: 60px; line-height: 60px; font-size: 18px; font-weight: 500; background: #47621e; color: #fff; text-align: center;}
+
+/* common layout */
+body{font-family: "Noto Sans KR"; font-size: 16px; font-weight: 400; color: #101010;}
+
+/* #header */
+#header{position: fixed; width: 100%; height: 80px; background: #aaa; z-index: 999;}
+#header.on{background: #47621e;}
+#header .logo{position: absolute; top: 10px; left: calc(50% - 55px); width: 110px; height: 60px; background: url("../images/logo/logo_white.png") no-repeat center; background-size: contain;}
+#header .util .menu_open_btn{position: absolute; top: calc(50% - 20px); right: 30px; width: 40px; height: 40px; background: url("../images/button/menu_white.png") no-repeat center; background-size: cover;}
+#header .gnb_wrap{display: none;}
+#header .gnb_wrap.on{display: block; position: fixed; right: 0; top: 0; width: 770px; height: 100%; background: #fff;}
+
+
+/* #footer */
+#footer{position: relative; width: 100%; height: 400px; background: #e1f0ca;}
+#footer .com_name{padding-top: 50px; font-size: 24px;}
+#footer p, #footer address, #footer ul{margin: 0 120px;}
+#footer address{padding-top: 30px;}
+#footer .copy{padding: 20px 0;}
+#footer ul > li{position: relative; margin-right: 30px; font-weight: 700;}
+#footer ul > li::after{content: ""; position: absolute; top: 5px; right: -15px; width: 2px; height: 16px; background: #101010;}
+#footer .partner{position: absolute; right: 120px; top: 0px; padding-top: 50px;}
+#footer .partner img{width: 150px; height: 50px;}
