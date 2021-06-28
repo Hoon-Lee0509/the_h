@@ -32,8 +32,10 @@ body{font-family: "Noto Sans KR"; font-size: 16px; font-weight: 400; color: #101
 #header .gnb_wrap.on h2{display: block; position: absolute; top: 10px; left: calc(50% - 70px);}
 
 #header .gnb_wrap.on .menu_close_btn{position: absolute; top: 35px; right: 20px; width: 30px; height: 30px; background: url("../images/button/cancel.png") no-repeat center / cover;}
-.search{position: relative; width: 650px; height: 50px; border: 3px solid #47621e; border-radius: 5px; margin: 100px 25px 30px;}
-.search a{position: absolute; top: 5px; right: 20px; width: 40px; height: 40px;}
+.search{position: relative; width: 650px; height: 50px; margin: 100px 25px 30px;}
+.search label{position: absolute; top: 10px; left: 20px;}
+.search input{width: 100%; height: 100%; border: 3px solid #47621e; border-radius: 5px; font-size: 24px;}
+.search a{position: absolute; top: 8px; right: 20px; width: 40px; height: 40px;}
 .search a img{width: 40px; height: 40px;}
 
 .gnb_wrap.on #gnb ul{justify-content: space-around;}
@@ -42,7 +44,7 @@ body{font-family: "Noto Sans KR"; font-size: 16px; font-weight: 400; color: #101
 .gnb_wrap.on #gnb > ul > li > ul > li > a{font-size: 18px; font-weight: 500;}
 .gnb_wrap.on #gnb ul li ul li ul li a{display: none;}
 
-.gnb_wrap.on .menu_photo{position: absolute; bottom: 120px; right: calc(50% - 340px); width: 680px;height: 300px; background: url("../images/furniture/furniture12.jpg") no-repeat center / cover; border-radius: 50px;}
+.gnb_wrap.on .menu_photo{position: absolute; bottom: 150px; right: calc(50% - 340px); width: 680px;height: 300px; background: url("../images/furniture/furniture12.jpg") no-repeat center / cover; border-radius: 50px;}
 
 
 #header .gnb_wrap.on .nav_btm_sns .sns{width: 60px; height: 60px; background: no-repeat center; background-size: cover; position: absolute; bottom: 20px;}
@@ -69,3 +71,12 @@ body{font-family: "Noto Sans KR"; font-size: 16px; font-weight: 400; color: #101
 #footer ul > li:not(:last-of-type)::after{content: ""; position: absolute; top: 5px; right: -15px; width: 2px; height: 16px; background: #101010;}
 #footer .partner{position: absolute; right: 120px; top: 0px; padding-top: 50px;}
 #footer .partner img{width: 150px; height: 50px;}
+
+/* btn */
+#modeBtn *{position: fixed; right: 30px;  z-index: 1000; border: 3px solid #000;}
+#modeBtn .top_btn{bottom: 30px; width: 50px; height: 50px; background: no-repeat center / cover; background-image: url("../images/icon/tree_black.png");}
+#modeBtn .top_btn:hover{background-image: url("../images/icon/tree.png");}
+#modeBtn .dark_btn, #modeBtn .light_btn{bottom: 100px; width: 50px; height: 50px;background: no-repeat center / cover;}
+#modeBtn .dark_btn{background-image: url("../images/icon/darkmode_line.png");}
+#modeBtn .dark_btn:hover{background-image: url("../images/icon/darkmode_color.png");}
+#modeBtn .light_btn{background-image: url("../images/button/lightmode_color.png"); display: none;}
