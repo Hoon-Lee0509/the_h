@@ -7,6 +7,7 @@ h1, h2, h3, h4, h5, h6{font-size: inherit; font-family: inherit;font-weight: inh
 a:link, a:visited, a:hover, a:active{color: inherit; text-decoration: none;}
 button{border: none; background: none; cursor: pointer;}
 address{font-family: inherit; font-style: normal;}
+input{border: none;}
 img{border: none; vertical-align: top;}
 
 /* common class */
@@ -15,28 +16,56 @@ img{border: none; vertical-align: top;}
 .f_l{float: left;}
 .f_r{float: right;}
 .clearfix::after{content: ""; display: block; clear: both;}
-#skip a{position: absolute; top: 0; left: -9999px; z-index: 1000;}
+#skip a{position: fixed; top: 0; left: -9999px; z-index: 1000;}
 #skip a:focus{left: 0; width: 100%; height: 60px; line-height: 60px; font-size: 18px; font-weight: 500; background: #47621e; color: #fff; text-align: center;}
 
 /* common layout */
 body{font-family: "Noto Sans KR"; font-size: 16px; font-weight: 400; color: #101010;}
 
 /* #header */
-#header{position: fixed; width: 100%; height: 80px; background: #aaa; z-index: 999;}
-#header.on{background: #47621e;}
+#header{position: fixed; width: 100%; height: 80px; z-index: 999;}
+#header.on{background: #47621e; box-shadow: 0 1px 10px 1px #000;}
 #header .logo{position: absolute; top: 10px; left: calc(50% - 55px); width: 110px; height: 60px; background: url("../images/logo/logo_white.png") no-repeat center; background-size: contain;}
 #header .util .menu_open_btn{position: absolute; top: calc(50% - 20px); right: 30px; width: 40px; height: 40px; background: url("../images/button/menu_white.png") no-repeat center; background-size: cover;}
 #header .gnb_wrap{display: none;}
-#header .gnb_wrap.on{display: block; position: fixed; right: 0; top: 0; width: 770px; height: 100%; background: #fff;}
+#header .gnb_wrap.on{display: block; position: fixed; right: 0; top: 0; width: 700px; height: 100%; background: #fff; box-shadow: -1px 0 10px #000;}
+#header .gnb_wrap.on h2{display: block; position: absolute; top: 10px; left: calc(50% - 70px);}
+
+#header .gnb_wrap.on .menu_close_btn{position: absolute; top: 35px; right: 20px; width: 30px; height: 30px; background: url("../images/button/cancel.png") no-repeat center / cover;}
+.search{position: relative; width: 650px; height: 50px; border: 3px solid #47621e; border-radius: 5px; margin: 100px 25px 30px;}
+.search a{position: absolute; top: 5px; right: 20px; width: 40px; height: 40px;}
+.search a img{width: 40px; height: 40px;}
+
+.gnb_wrap.on #gnb ul{justify-content: space-around;}
+/* .gnb_wrap.on #gnb > ul > li:nth-child(even){margin-left: 50px;} */
+.gnb_wrap.on #gnb > ul > li > a{font-size: 28px; font-weight: 600;}
+.gnb_wrap.on #gnb > ul > li > ul > li > a{font-size: 18px; font-weight: 500;}
+.gnb_wrap.on #gnb ul li ul li ul li a{display: none;}
+
+.gnb_wrap.on .menu_photo{position: absolute; bottom: 120px; right: calc(50% - 340px); width: 680px;height: 300px; background: url("../images/furniture/furniture12.jpg") no-repeat center / cover; border-radius: 50px;}
+
+
+#header .gnb_wrap.on .nav_btm_sns .sns{width: 60px; height: 60px; background: no-repeat center; background-size: cover; position: absolute; bottom: 20px;}
+#header .gnb_wrap.on .nav_btm_sns p{position: absolute; bottom: 80px; font-size: 24px; right: 20px;}
+#header .gnb_wrap.on .nav_btm_sns .sns1{background-image: url("../images/sns/facebook_black.png");right: 260px;}
+#header .gnb_wrap.on .nav_btm_sns .sns2{background-image: url("../images/sns/instagram_black.png");right: 180px;}
+#header .gnb_wrap.on .nav_btm_sns .sns3{background-image: url("../images/sns/twitch_black.png"); right: 100px;}
+#header .gnb_wrap.on .nav_btm_sns .sns4{background-image: url("../images/sns/youtube_black.png"); right: 20px;}
+#header .gnb_wrap.on .nav_btm_sns .sns1:hover{background-image: url("../images/sns/facebook_color.png");}
+#header .gnb_wrap.on .nav_btm_sns .sns2:hover{background-image: url("../images/sns/instagram_color.png");}
+#header .gnb_wrap.on .nav_btm_sns .sns3:hover{background-image: url("../images/sns/twitch_color.png");}
+#header .gnb_wrap.on .nav_btm_sns .sns4:hover{background-image: url("../images/sns/youtube_color.png");}
+
+
 
 
 /* #footer */
 #footer{position: relative; width: 100%; height: 400px; background: #e1f0ca;}
-#footer .com_name{padding-top: 50px; font-size: 24px;}
+#footer .com_name{padding-top: 50px; font-size: 24px; font-weight: 700;}
 #footer p, #footer address, #footer ul{margin: 0 120px;}
 #footer address{padding-top: 30px;}
 #footer .copy{padding: 20px 0;}
-#footer ul > li{position: relative; margin-right: 30px; font-weight: 700;}
-#footer ul > li::after{content: ""; position: absolute; top: 5px; right: -15px; width: 2px; height: 16px; background: #101010;}
+#footer ul > li{position: relative; margin-right: 30px;}
+#footer ul > li:not(:last-of-type)::after{content: ""; position: absolute; top: 5px; right: -15px; width: 2px; height: 16px; background: #101010;}
 #footer .partner{position: absolute; right: 120px; top: 0px; padding-top: 50px;}
 #footer .partner img{width: 150px; height: 50px;}

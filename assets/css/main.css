@@ -4,14 +4,20 @@
 #header #slide{display: block; width: 100vw; height: 100vh;}
 
 /* acdn */
-#mainAcdn {position: relative; margin: 80px 120px;}
-#mainAcdn .acdn_wrap{width: 140px; height: 650px; background: no-repeat; background-size: cover; background-color: #aaa;}
-#mainAcdn .acdn_wrap.active{width: 1200px; background: no-repeat; background-size: cover;background-color: #aaa;}
-#mainAcdn .acdnpanel{position: absolute;}
-#acdnPanel1{top: 0;left: 0;}
-#acdnPanel2{top: 0;left: 160px;}
-#acdnPanel3{top: 0;left: 320px;}
-#acdnPanel4{top: 0;right: 0;}
+#mainAcdn {position: relative; margin: 80px 110px;}
+#mainAcdn h2{text-align: center; font-size: 60px; font-weight: 700; margin-bottom: 20px;}
+#mainAcdn .acdn_wrap{float: left; position: relative;}
+#mainAcdn .acdn_wrap + .acdn_wrap{margin-left: 20px;}
+#mainAcdn .acdn_wrap {width: 140px; height: 650px;background: no-repeat; background-size: cover;}
+#mainAcdn .acdn_wrap h3{text-align: center;}
+#mainAcdn .acdn_wrap:nth-child(2){background-image: url("../images/02_accordion/WAH_0.jpg"); background-position: 30% 0;}
+#mainAcdn .acdn_wrap:nth-child(3){background-image: url("../images/02_accordion/conference_02.jpg"); background-position: 10% 0;}
+#mainAcdn .acdn_wrap:nth-child(4){background-image: url("../images/02_accordion/academy_01.jpg"); background-position: 10% 0;}
+#mainAcdn .acdn_wrap:nth-child(5){background-image: url("../images/02_accordion/covid_01.jpg"); background-position: 55% 0;}
+#mainAcdn .acdn_wrap div{visibility: hidden;}
+#mainAcdn .acdn_wrap.on {width: 1200px; height: 650px; background: no-repeat; background-size: cover;}
+#mainAcdn .acdn_wrap.on .acdnpanel{width: 100%; height: 100%;}
+
 
 
 /* fSizeGreen */
@@ -22,18 +28,42 @@
 #fSizeGreen span{top: 100px; right: 38%; font-size: 40px;}
 #fSizeGreen p{top: 200px; left: calc(50% - 50px); font-size: 24px;}
 #fSizeGreen a{bottom: 100px; left: calc(50% - 50px); font-size: 24px;}
+#fSizeGreen a:hover, #fSizeGreen a:focus{color: #dcf389;}
 
 /* gallery */
+#gallery{margin: 80px}
+#gallery h2{text-align: center; font-size: 60px; font-weight: 700; margin-bottom: 20px;}
+#gallery div{position: relative; height: 840px; width: 1680px; margin: 0 auto;}
+#gallery div ul li{position: absolute; background: no-repeat center / cover;}
+#gallery div ul li:nth-child(1){top: 0; left: 0; width: 520px; height: 300px; background-image: url("../images/04_gallery/gallery01.jpg");}
+#gallery div ul li:nth-child(2){bottom: 0; left: 0x;width: 250px; height: 520px; background-image: url("../images/04_gallery/gallery02.jpg");}
+#gallery div ul li:nth-child(3){top: 320px; left: 270px;width: 250px; height: 250px; background-image: url("../images/04_gallery/gallery03.jpg");}
+#gallery div ul li:nth-child(4){bottom: 0; left: 270px;width: 250px; height: 250px; background-image: url("../images/04_gallery/gallery04.jpg");}
+#gallery div ul li:nth-child(5){top: 0; left: 530px;width: 400px; height: 840px; background-image: url("../images/04_gallery/gallery05.jpg");}
+#gallery div ul li:nth-child(6){top: 0; left: 940px;width: 520px; height: 200px; background-image: url("../images/04_gallery/gallery06.jpg");}
+#gallery div ul li:nth-child(7){top: 0; right: 0; width: 200px; height: 200px; background-image: url("../images/04_gallery/gallery07.jpg");}
+#gallery div ul li:nth-child(8){top: 220px; left: 940px;width: 350px; height: 400px; background-image: url("../images/04_gallery/gallery08.jpg");}
+#gallery div ul li:nth-child(9){top: 220px; right: 0; width: 370px; height: 300px; background-image: url("../images/04_gallery/gallery09.jpg");}
+#gallery div ul li:nth-child(10){bottom: 0; right: 390px;width: 350px; height: 200px; background-image: url("../images/04_gallery/gallery10.png");}
+#gallery div ul li:nth-child(11){bottom: 0; right: 0; width: 370px; height: 300px; background-image: url("../images/04_gallery/gallery11.jpg");}
+#gallery div ul li a{display: block;width: 100%; height: 100%;}
+#gallery div ul li a img{width: 100%; height: 100%;}
 
 /* fSizeYouth */
-#fSizeYouth{position: relative; width: 100%; height: 600px; background: url("../images/05_fSize-2030/for2030_2.jpg") no-repeat fixed center; background-size: cover;}
+#fSizeYouth{position: relative; width: 100%; height: 600px; background: url("../images/05_fSize-2030/for2030_2.jpg") no-repeat fixed center; background-size: cover; color: #fff; text-align: left; padding-left: 120px;}
+#fSizeYouth h2{font-size: 40px; padding: 30px 0 50px;}
+#fSizeYouth h2 span{font-size: 60px;color: #f3f5a0; font-weight: 700;}
+#fSizeYouth p{font-size: 24px;padding-bottom: 150px;}
+#fSizeYouth a{font-size: 20px;}
+#fSizeYouth a:hover, #fSizeYouth a:focus{color: #f3f5a0;}
 
 /* info */
 #info{margin: 80px 120px; justify-content: space-between; text-align: center; color: #fff;}
-#info .select{width: 480px; height: 480px; background: no-repeat center; background-size: cover;}
+#info .select{position: relative; width: 480px; height: 480px; background: rgba(0, 0, 0, 0.5);}
 #info .select h3{position: relative; font-size: 24px; line-height: 200px;}
 #info .select h3::after{content: ""; position: absolute; bottom: -20px; left: calc(50% - 150px); width: 300px; height: 5px; background: #fff;}
-#info .select.wwfp{background-image: url("../images/greenary/greenary06.jpg");}
-#info .select.recruit{background-image: url("../images/company/company04.jpg");}
-#info .select.members{background-image: url("../images/greenary/greenary02.jpg");}
+#info .select div{position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: no-repeat center / cover;}
+#info .select.wwfp div{background-image: url("../images/greenary/greenary06.jpg");}
+#info .select.recruit div{background-image: url("../images/company/company04.jpg");}
+#info .select.members div{background-image: url("../images/greenary/greenary02.jpg");}
 #info p{padding-top: 50px;}

@@ -20,7 +20,7 @@
     <div id="skip">
         <a href="#">본문 바로가기</a>
     </div>
-    <header id="header">
+    <header id="header" class="on">
         <h1 class="logo">
             <a href="">
                 <span class="blind">The H Furniture</span>
@@ -32,9 +32,22 @@
             </button>
         </div>
         <div class="gnb_wrap">
+            <h2 class="gnb_logo">
+                <a href="">
+                    <img src="assets/images/logo/logo.png" alt="The H Furniture">
+                </a>
+            </h2>
+            <button type="button" class="menu_close_btn">
+                <span class="blind">메뉴창 닫기</span>
+            </button>
+            <div class="search">
+                <label for="search"></label>
+                <input type="text" name="search" id="search">
+                <a href=""><img src="assets/images/button/search.png" alt="검색"></a>
+            </div>
             <nav id="gnb">
                 <h2 class="blind">주메뉴</h2>
-                <ul>
+                <ul class="d_f">
                     <li class="dep1">
                         <a href="">The H 소개</a>
                         <ul>
@@ -109,7 +122,7 @@
                         </ul>
                     </li>
                     <li class="dep4">
-                        <a href=""></a>
+                        <a href="">The H Care</a>
                         <ul>
                             <li><a href="">The H Care Service</a></li>
                             <li><a href="">The H Members</a></li>
@@ -119,12 +132,13 @@
                     </li>
                 </ul>
             </nav>
+            <div class="menu_photo"></div>
             <div class="nav_btm_sns">
-                <p></p>
-                <a href=""><img src="assets/images/sns/facebook_black.png" alt="페이스북"></a>
-                <a href=""><img src="assets/images/sns/instagram_black.png" alt="인스타그램"></a>
-                <a href=""><img src="assets/images/sns/twitch_black.png" alt="트위치"></a>
-                <a href=""><img src="assets/images/sns/youtube_black.png" alt="유튜브"></a>
+                <p>The H SNS 바로가기</p>
+                <a href="" class="sns sns1"><span class="blind">페이스북</span></a>
+                <a href="" class="sns sns2"><span class="blind">인스타그램</span></a>
+                <a href="" class="sns sns3"><span class="blind">트위치</span></a>
+                <a href="" class="sns sns4"><span class="blind">유튜브</span></a>
             </div>
         </div>
     </header>
@@ -149,7 +163,8 @@
         </div>
     </div>
 
-    <div id="mainAcdn" class="accordion">
+    <div id="mainAcdn" class="accordion clearfix">
+        <h2>The H Story</h2>
         <div class="acdn_wrap">
             <h3><button type="button" aria-controls="acdnPanel1" id="acdnHeader1" class="acdnheader">About The H</button></h3>
             <div role="region" aria-labelledby="acdnHeader1" id="acdnPanel1" class="acdnpanel">
@@ -163,7 +178,7 @@
             </div>
         </div>
         <div class="acdn_wrap">
-            <h3><button type="button" aria-controls="acdnPanel2" id="acdnHeader2" class="acdnheader">의견을 존중하는 The H</button></h3>
+            <h3><button type="button" aria-controls="acdnPanel2" id="acdnHeader2" class="acdnheader">의견을 존중하는<br>The H</button></h3>
             <div role="region" aria-labelledby="acdnHeader2" id="acdnPanel2" class="acdnpanel">
                 <div>
                     <p>당신의 의견이 새로운 제품이 될 수 있습니다.
@@ -184,7 +199,7 @@
                 </div>
             </div>
         </div>
-        <div class="acdn_wrap active">
+        <div class="acdn_wrap">
             <h3><button type="button" aria-controls="acdnPanel4" id="acdnHeader4" class="acdnheader">The H의 COVID-19 대응 방침</button></h3>
             <div role="region" aria-labelledby="acdnHeader4" id="acdnPanel4" class="acdnpanel">
                 <div>
@@ -210,21 +225,23 @@
         <h2>Gallery</h2>
         <div>
             <ul>
-                <li><a href=""><img src="" alt=""></a></li>
-                <li><a href=""><img src="" alt=""></a></li>
-                <li><a href=""><img src="" alt=""></a></li>
-                <li><a href=""><img src="" alt=""></a></li>
-                <li><a href=""><img src="" alt=""></a></li>
-                <li><a href=""><img src="" alt=""></a></li>
-                <li><a href=""><img src="" alt=""></a></li>
-                <li><a href=""><img src="" alt=""></a></li>
-                <li><a href=""><img src="" alt=""></a></li>
-                <li><a href=""><img src="" alt=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
             </ul>
         </div>
     </section>
 
     <div id="fSizeYouth">
+        <div></div>
         <h2>Of The, By The, For The <span>2030</span></h2>
         <p>2030에, 2030에 의한, 2030을 위한<br>
             가구를 제작해드립니다. 비혼, 독신을 위한 1인가구부터<br>
@@ -243,6 +260,7 @@
                 파트너십 기업이 참여하여 각 국가의 숲 조성 및<br>
                 사막에 숲 조성연구 등을 진행하는 프로젝트입니다.</p>
             <a href="">더 알아보기</a>
+            <div></div>
         </div>
         <div class="select recruit">
             <h3>The H Recruit</h3>
@@ -250,6 +268,7 @@
                 The H와 함께 발전할 인재 채용에 지원해보세요.<br>
                 모두에게 열려있지만 누구에게나 열어주진 않는답니다.<br></p>
             <a href="">채용공고 바로가기</a>
+            <div></div>
         </div>
         <div class="select members">
             <h3>The H Care & Members</h3>
@@ -258,12 +277,18 @@
                 다른 브랜드와 차별화된 고객맞춤 특별 서비스를<br>
                 제공해드리고 있습니다.</p>
             <a href="">혜택 더 알아보기</a>
+            <div></div>
         </div>
     </section>
 
     <footer id="footer">
         <p class="com_name">(주) 디에이치 퍼니쳐</p>
-        <address>대표: 이훈<br>주소: (10040) 경기도 희망시 소망로 1004번 안길 7(소망동, The H 빌딩)<br>사업자등록번호: 111-11-01004<br>통신판매업신고번호: 제2021-경기소망-1004호 전화번호: 031-000-0000<br>전화 : 031)123-1234 ⎮ 팩스 : 031)111-1001~4 ⎮ 이메일 : theh_furniture@theh.com</address>
+        <address>대표: 이훈<br>주소: (10040) 경기도 희망시 소망로 1004번 안길 7(소망동, The H 빌딩)<br>사업자등록번호: 111-11-01004<br>통신판매업신고번호: 제2021-경기소망-1004호 전화번호: 031-000-0000</address>
+        <ul class="d_f">
+            <li><a href="">전화 : 031)123-1234</a></li>
+            <li><a href="">팩스 : 031)111-1001~4</a></li>
+            <li><a href="">이메일 : theh_furniture@theh.com</a></li>
+        </ul>
         <p class="copy">Copyright &copy; The H Furniture. All Rights Reserved.</p>
         <ul class="d_f">
             <li><a href="">회사소개</a></li>
