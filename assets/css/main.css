@@ -1,26 +1,28 @@
 @charset "utf-8";
 
 /* header */
-#cnt1{position: relative;}
-.swiper-container{width: 100vw; height: 100vh;}
+#cnt1{width: 100%; height: 100%;}
+.swiper-container{width: 100%; height: 100vh;}
 .swiper-container .swiper-slide{background: no-repeat center / cover; width: 100%; height: 100%;}
 .swiper-container .slide1{background-image: url("../images/01_slick-slide/slide1.jpg");}
 .swiper-container .slide2{background-image: url("../images/01_slick-slide/slide2.jpg");}
 .swiper-container .slide3{background-image: url("../images/01_slick-slide/slide3.jpg");}
 .swiper-container .slide4{background-image: url("../images/01_slick-slide/slide4.jpg");}
 .swiper-container .slide5{background-image: url("../images/01_slick-slide/slide5.jpg");}
-.swiper-container .controller{position: absolute; bottom: 50px; width: 50px;height: 50px; background: no-repeat center / cover;}
+.swiper-container .controller{position: absolute; bottom: 50px;}
+.swiper-container .swiper-button-prev,.swiper-container .swiper-button-next{width: 50px;height: 50px; background: no-repeat center / cover;}
 .swiper-container .swiper-button-prev{left: 50px; background-image: url("../images/button/prev.png");}
-.swiper-container .swiper-button-next{left: 200px; background-image: url("../images/button/next.png");}
+.swiper-container .swiper-button-next{left: 150px; background-image: url("../images/button/next.png");}
+.swiper-container .swiper-button-prev::after, .swiper-container .swiper-button-next::after{content: "";}
 .swiper-container .swiper-slide .bg_box{width: 100%; height: 100%; background: rgba(0, 0, 0, 0.3);}
-.swiper-container .swiper-slide .txt_box{width: 1200px; height: 600px; margin: 300px auto;  color: #fff; text-align: right;}
-.swiper-container .swiper-slide .txt_box h3{font-size: 48px; font-weight: 700; margin-bottom: 30px; color: rgb(255, 232, 181);}
-.swiper-container .swiper-slide .txt_box p{font-size: 24px; margin-bottom: 80px;}
-.swiper-container .swiper-slide .txt_box a{font-size: 20px;}
+.swiper-container .swiper-slide .txt_box{width: 100%; height: 100%; padding-top: 300px;  color: #fff; text-align: right;}
+.swiper-container .swiper-slide .txt_box h3{font-size: 48px; font-weight: 700; margin: 0 150px 30px 0; color: rgb(255, 232, 181);}
+.swiper-container .swiper-slide .txt_box p{font-size: 24px; margin: 0 150px 80px 0;}
+.swiper-container .swiper-slide .txt_box a{display: block; font-size: 20px; margin-right: 150px;}
 
 /* acdn */
 #cnt2{width: 100%; height: 100%; margin: 80px auto;}
-#mainAcdn h2{width: 400px; text-align: left; font-size: 60px; font-weight: 700; margin-left: 130px;}
+#mainAcdn h2{width: 400px; text-align: center; font-size: 60px; font-weight: 700;}
 
 /* 공통 */
 .accordion li{background: no-repeat 50% / cover;transition:all 0.5s;}/* 배경위치는 알아서 제어하기 */
@@ -80,7 +82,7 @@
 
 /* fSizeYouth */
 #fSizeYouth{position: relative; height: 600px; background: url("../images/05_fSize-2030/for2030_2.jpg") no-repeat fixed center; background-size: cover; color: #fff; text-align: left;}
-#fSizeYouth div{width: 100%; margin-left: 120px;}
+#fSizeYouth div{width: 80%; padding-left: 120px;}
 #fSizeYouth h2{font-size: 28px; padding: 30px 0 50px;}
 #fSizeYouth h2 span{font-size: 60px;color: #f3f5a0; font-weight: 700;}
 #fSizeYouth p{font-size: 24px;padding-bottom: 150px;}
@@ -89,7 +91,7 @@
 
 /* info */
 #cnt6{width: 95%; margin: 80px auto;}
-#cnt6 h2{width: 96%; padding-bottom: 50px; text-align: right; font-size: 60px; font-weight: 700;}
+#cnt6 h2{width: 96%; padding-bottom: 50px; text-align: center; font-size: 60px; font-weight: 700;}
 #info ul{justify-content: space-around;}
 #info ul li{color: #fff; font-weight: 500; text-align: center; position: relative; overflow: hidden;}
 #info ul li img{transition: transform 0.5s;}
@@ -108,25 +110,19 @@
 @media screen and (max-width: 1080px) {
     /* header */
 #cnt1{position: relative;}
-.swiper-container{width: 100vw; height: 100vh;}
-.swiper-container .swiper-slide{background: no-repeat center / cover; width: 100%; height: 100%;}
-.swiper-container .slide1{background-image: url("../images/01_slick-slide/slide1.jpg");}
-.swiper-container .slide2{background-image: url("../images/01_slick-slide/slide2.jpg");}
-.swiper-container .slide3{background-image: url("../images/01_slick-slide/slide3.jpg");}
-.swiper-container .slide4{background-image: url("../images/01_slick-slide/slide4.jpg");}
-.swiper-container .slide5{background-image: url("../images/01_slick-slide/slide5.jpg");}
-.swiper-container .controller{position: absolute; bottom: 50px; width: 50px;height: 50px; background: no-repeat center / cover;}
-.swiper-container .swiper-button-prev{left: 50px; background-image: url("../images/button/prev.png");}
-.swiper-container .swiper-button-next{left: 200px; background-image: url("../images/button/next.png");}
+.swiper-container{width: 100vw; height: 100vh; overflow: hidden;}
+.swiper-container .controller{position: absolute; bottom: 50px;}
+.swiper-container .swiper-button-prev{left: 50px;}
+.swiper-container .swiper-button-next{left: 150px;}
 .swiper-container .swiper-slide .bg_box{width: 100%; height: 100%; background: rgba(0, 0, 0, 0.3);}
-.swiper-container .swiper-slide .txt_box{width: 80%; height: 100%; margin: 300px auto;  color: #fff; text-align: right;}
-.swiper-container .swiper-slide .txt_box h3{font-size: 48px; font-weight: 700; margin-bottom: 30px; color: rgb(255, 232, 181);}
-.swiper-container .swiper-slide .txt_box p{font-size: 24px; margin-bottom: 80px;}
-.swiper-container .swiper-slide .txt_box a{font-size: 20px;}
+.swiper-container .swiper-slide .txt_box{width: 100%; height: 100%; color: #fff; text-align: right;}
+.swiper-container .swiper-slide .txt_box h3{font-size: 60px; margin: 0 100px 30px 0; color: rgb(255, 232, 181);}
+.swiper-container .swiper-slide .txt_box p{font-size: 32px; margin: 0 100px 80px 0; word-break: keep-all;}
+.swiper-container .swiper-slide .txt_box a{font-size: 32px; margin-right: 100px;}
 
 /* acdn */
 #cnt2{width: 100%; height: 100%; margin: 80px auto;}
-#mainAcdn h2{width: 400px; padding-left: 50px; text-align: left; font-size: 60px; font-weight: 700;}
+#mainAcdn h2{width: 400px; text-align: center; font-size: 60px; font-weight: 700;}
 
 /* 공통 */
 .accordion li{background: no-repeat 50% / cover;transition:all 0.5s;}/* 배경위치는 알아서 제어하기 */
@@ -162,17 +158,7 @@
 #gallery div{display: flex;justify-content: center;margin: 80px auto;}
 /* vw 단위로 설정하여 창크기에 따라 줄어들어요 */
 #gallery ul{display: grid;grid-template-rows: 15% 21% 30%; grid-template-columns: 30% 30% 40%;}
-#gallery ul .list1{grid-row: 1 / 3;grid-column: 1 / 3;}
-#gallery ul .list2{grid-row: 3 / 7;grid-column: 1;}
-#gallery ul .list3{grid-row: 3 / 5;grid-column: 2;}
-#gallery ul .list4{grid-row: 5 / 7;grid-column: 2;}
-#gallery ul .list5{grid-row: 1 / 7;grid-column: 3;}
-#gallery ul .list6{display: none;}
-#gallery ul .list7{display: none;}
-#gallery ul .list8{display: none;}
-#gallery ul .list9{display: none;}
-#gallery ul .list10{display: none;}
-#gallery ul .list11{display: none;}
+#gallery ul .list6, #gallery ul .list7, #gallery ul .list8, #gallery ul .list9, #gallery ul .list10, #gallery ul .list11{display: none;}
 
 #gallery ul li a{display: block;margin: 0.52vw;overflow: hidden;}
 #gallery ul .list1 a,  #gallery ul .list5 a,  #gallery ul .list6 a,  #gallery ul .list7 a{margin-top: 0;}
@@ -186,7 +172,7 @@
 
 /* fSizeYouth */
 #fSizeYouth{position: relative; height: 600px; background: url("../images/05_fSize-2030/for2030_2.jpg") no-repeat fixed center; background-size: cover; color: #fff; text-align: left;}
-#fSizeYouth div{width: 100%; margin-left: 120px;}
+#fSizeYouth div{width: 80%; padding-left: 120px;}
 #fSizeYouth h2{font-size: 28px; padding: 30px 0 50px;}
 #fSizeYouth h2 span{font-size: 60px;color: #f3f5a0; font-weight: 700;}
 #fSizeYouth p{font-size: 24px;padding-bottom: 150px;}
@@ -195,8 +181,8 @@
 
 /* info */
 #cnt6{width: 95%; margin: 80px auto;}
-#cnt6 h2{padding-bottom: 50px; text-align: right; font-size: 60px; font-weight: 700;}
-#info ul{flex-direction: column}
+#cnt6 h2{padding-bottom: 50px; text-align: center; font-size: 60px; font-weight: 700;}
+#info ul{flex-direction: column; margin-bottom: 10px;}
 #info ul li{color: #fff; font-weight: 500; text-align: left; position: relative; overflow: hidden; width: 100%; height: 300px;}
 #info ul li img{transition: transform 0.5s;}
 #info ul li:hover img, #info ul li:focus img{transform: scale(1.1);}
@@ -212,29 +198,23 @@
 #info ul li a:hover, #info ul li a:focus{color: #bccca5; text-decoration: underline;}
 #info ul li:hover h3, #info ul li:focus h3{padding: 10px 0 0 10px; text-align: left;}
 #info ul li:hover h3::after, #info ul li:focus h3::after{top: 0; left: 400px; width: 2px; height: 250px;}
-
-
 }
+
 @media screen and (max-width: 770px) {
-    #cnt1{position: relative;}
+    #cnt1{position: relative; width: 100vw; height: 100vh;}
 .swiper-container{width: 100vw; height: 100vh;}
 .swiper-container .swiper-slide{background: no-repeat center / cover; width: 100%; height: 100%;}
-.swiper-container .slide1{background-image: url("../images/01_slick-slide/slide1.jpg");}
-.swiper-container .slide2{background-image: url("../images/01_slick-slide/slide2.jpg");}
-.swiper-container .slide3{background-image: url("../images/01_slick-slide/slide3.jpg");}
-.swiper-container .slide4{background-image: url("../images/01_slick-slide/slide4.jpg");}
-.swiper-container .slide5{background-image: url("../images/01_slick-slide/slide5.jpg");}
-.swiper-container .controller{position: absolute; bottom: 50px; width: 50px;height: 50px; background: no-repeat center / cover;}
-.swiper-container .swiper-button-prev{left: 50px; background-image: url("../images/button/prev.png");}
-.swiper-container .swiper-button-next{left: 200px; background-image: url("../images/button/next.png");}
+.swiper-container .controller{bottom: 50px;}
+.swiper-container .swiper-button-prev{left: 30px;}
+.swiper-container .swiper-button-next{left: 100px;}
 .swiper-container .swiper-slide .bg_box{width: 100vw; height: 100vh; background: rgba(0, 0, 0, 0.3);}
-.swiper-container .swiper-slide .txt_box{width: 80%; height: 100%; margin: 100px auto;  color: #fff; text-align: right;}
-.swiper-container .swiper-slide .txt_box h3{font-size: 28px; font-weight: 700; margin-bottom: 30px; color: rgb(255, 232, 181);}
-.swiper-container .swiper-slide .txt_box p{font-size: 16px; margin-bottom: 80px; word-break: keep-all;}
-.swiper-container .swiper-slide .txt_box a{font-size: 18px;}
+.swiper-container .swiper-slide .txt_box{width: 90%; height: 50%; margin: 1px auto; padding-top: 100px;color: #fff; text-align: left;}
+.swiper-container .swiper-slide .txt_box h3{font-size: 36px; font-weight: 700; margin: 0 0 70px 0; color: rgb(255, 232, 181);}
+.swiper-container .swiper-slide .txt_box p{font-size: 20px;margin: 0 0 60px 0; word-break: keep-all;}
+.swiper-container .swiper-slide .txt_box a{font-size: 18px; margin: 0;}
 
-#mainAcdn{margin: 0 10px;}
-#mainAcdn h2{font-size: 48px; margin-bottom: 20px;}
+#mainAcdn{margin: 0 auto;}
+#mainAcdn h2{font-size: 48px; margin: 0 auto 50px; width: 80%; text-align: center; }
 .accordion.m{width: 100%;height:auto;}
 .accordion.m li{width: 100%;height: 100px; background-position: 30%; position: relative;}
 .accordion.m li div{position: absolute; bottom: 0; left: 0; width: 100%;}
@@ -271,7 +251,7 @@
 
 /* info */
 #cnt6{width: 100%; margin: 80px auto;}
-#cnt6 h2{padding-bottom: 50px; text-align: right; font-size: 60px; font-weight: 700;}
+#cnt6 h2{padding-bottom: 50px; text-align: center; font-size: 60px; font-weight: 700;}
 #info ul{flex-direction: column;}
 #info ul li{color: #fff; font-weight: 500; text-align: center; position: relative; overflow: hidden;}
 #info ul li img{transition: transform 0.5s;}
@@ -289,7 +269,7 @@
 
 /* fSizeYouth */
 #fSizeYouth{position: relative; height: 500px; background: url("../images/05_fSize-2030/for2030_2.jpg") no-repeat fixed center; background-size: cover; color: #fff; text-align: left;}
-#fSizeYouth div{width: 100%; margin-left: 20px;}
+#fSizeYouth div{width: 80%; padding-left: 20px;}
 #fSizeYouth h2{font-size: 16px; padding: 30px 0 50px;}
 #fSizeYouth h2 span{font-size: 32px;color: #f3f5a0; font-weight: 700;}
 #fSizeYouth p{font-size: 18px;padding-bottom: 150px;}
@@ -298,20 +278,11 @@
 
 /* info */
 #cnt6{width: 100%; margin: 80px auto;}
-#cnt6 h2{padding-bottom: 50px; text-align: right; font-size: 36px; font-weight: 700;}
-#info ul{justify-content: space-around;}
-#info ul li{color: #fff; font-weight: 500; text-align: center; position: relative; overflow: hidden; height: 500px;}
-#info ul li img{transition: transform 0.5s;}
-#info ul li:hover img, #info ul li:focus img{transform: scale(1.1);}
-#info ul li div{position: absolute; top: 0; left: 0;width: 100%; height: 100%;  transition: all 0.5s;}
-#info ul li div p, #info ul li div p, #info ul li div a, #info ul li div a{visibility: hidden;}
-#info ul li:hover div, #info ul li:focus div{background: rgba(0, 0, 0, 0.5);}
-#info ul li:hover div p, #info ul li:focus div p, #info ul li:hover div a, #info ul li:focus div a{visibility: visible; text-align: center;}
-#info ul li h3{font-size: 32px; font-weight: 700; text-shadow: 1px 1px 10px #000; position: relative; padding-top: 200px;}
-#info ul li:hover h3, #info ul li:focus h3{position: relative; padding-top: 50px; text-align: center; text-shadow: none;}
-#info ul li h3::after{content: ""; position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 90%; height: 2px; background: #fff;}
-#info ul li p{padding-top: 80px; font-size: 18px;}
-#info ul li a{display: block; font-size: 20px; font-weight: 700; margin-top: 100px;}
-#info ul li a:hover, #info ul li a:focus{color: #bccca5; text-decoration: underline;}
-#info ul li:hover h3::after, #info ul li:focus h3::after{position: absolute; bottom: -10px; left: 0; width: 90%; height: 2px;}
+#cnt6 h2{font-size: 36px;}
+#info ul li{width: 95%; margin: 0 auto 10px; font-weight: 500; text-align: center;height: 500px;}
+#info ul li div p, #info ul li div a{left: 50%;}
+#info ul li p{top: 50%; transform: translate(-50%, -50%); width: 90%; word-break: keep-all;}
+#info ul li a{display: block; top: 70%; transform: translateX(-50%); width: 80%;}
+#info ul li:hover h3, #info ul li:focus h3{text-align: center;}
+#info ul li:hover h3::after, #info ul li:focus h3::after{top: 120px; left: 50%; width: 80%; height: 2px;}
 }

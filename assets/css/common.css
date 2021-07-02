@@ -21,16 +21,23 @@ img{border: none; vertical-align: top;}
 
 /* common layout */
 body{font-family:  "애플 SD 고딕 Neo", "Apple SD Gothic Neo", "Noto Sans KR", "맑은 고딕", "Malgun Gothic"; font-size: 16px; font-weight: 400; color: #101010;}
-#wrap{width: 100%; margin: 0 auto; background: #fff; color: #101010;}
-#wrap.dark{background: #101010; color: #fff;}
+#wrap{width: 100%;background: #fff;}
+#wrap.dark, #wrap.dark .gnb_wrap.on .white_bg,#wrap.dark #gnb{background: #101010; color: #fff;}
 #wrap.dark #footer, #wrap.dark #mFooter{background: #505050;}
 #wrap.dark #footer ul > li:not(:last-of-type)::after{background: #fff;}
+#wrap.dark .search input{border-color: #fff; background: #101010; color: #fff;}
+#wrap.dark #header .gnb_wrap.on .nav_btm_sns .sns1{background-image: url("../images/sns/facebook_color.png");}
+#wrap.dark #header .gnb_wrap.on .nav_btm_sns .sns2{background-image: url("../images/sns/instagram_color.png");}
+#wrap.dark #header .gnb_wrap.on .nav_btm_sns .sns3{background-image: url("../images/sns/twitch_color.png");}
+#wrap.dark #header .gnb_wrap.on .nav_btm_sns .sns4{background-image: url("../images/sns/youtube_color.png");}
+#wrap.dark #header .gnb_wrap.on .menu_close_btn{background-image: url("../images/button/cancel_white.png");}
 
 /* #header */
-#header{position: fixed; width: 100%; height: 80px; z-index: 999;}
+#header{position: fixed; top: 0; right: 0; width: 100%; height: 80px; z-index: 999;}
 #header.on{background: #47621e; box-shadow: 0 1px 10px 1px #000;}
-#header .logo{position: absolute; top: 10px; left: calc(50% - 55px); width: 110px; height: 60px; background: url("../images/logo/logo_white.png") no-repeat center; background-size: contain;}
+#header .logo{position: absolute; top: 10px; left: calc(50% - 55px); width: 110px; height: 60px; background: url("../images/logo/logo_white.png") no-repeat center; background-size: cover;}
 #header .logo a{display: block; width: 100%; height: 100%;}
+#header .util{position: relative; width: 100%; height: 100%;}
 #header .util .menu_open_btn{position: absolute; top: calc(50% - 20px); right: 30px; width: 40px; height: 40px; background: url("../images/button/menu_white.png") no-repeat center; background-size: cover;}
 #header .gnb_wrap{display: none;}
 #header .gnb_wrap.on{display: block;position: fixed; right: 0; top: 0; width: 700px; height: 100%;}
@@ -53,8 +60,10 @@ body{font-family:  "애플 SD 고딕 Neo", "Apple SD Gothic Neo", "Noto Sans KR"
 .gnb_wrap.on #gnb > ul > li:hover > a::after,.gnb_wrap.on #gnb > ul > li > a:focus::after{content: ""; position: absolute; top: -5px; right: -5px; width: 6px; height: 6px; border-radius: 3px; background: #20777a;}
 .gnb_wrap.on #gnb ul li ul li{padding-top: 10px;}
 .gnb_wrap.on #gnb ul li ul li a{font-size: 18px; font-weight: 500;}
+.gnb_wrap.on #gnb ul li ul li:hover a, .gnb_wrap.on #gnb ul li ul li a:focus{color: #008000; position: relative;}
+.gnb_wrap.on #gnb ul li ul li:hover a::after, .gnb_wrap.on #gnb ul li ul li a:focus::after{content: ""; position: absolute; top: calc(50% - 10px); right: -25px; width: 20px; height: 20px; background: url("../images/icon/biodegradable.png") no-repeat center / cover; }
 
-.gnb_wrap.on .menu_photo{position: absolute; top: 480px; right: calc(50% - 340px); width: 680px;height: 250px; background: url("../images/furniture/furniture12.jpg") no-repeat center / cover; border-radius: 40px;}
+.gnb_wrap.on .menu_photo{position: absolute; top: 60%; right: 50%; transform: translateX(50%); width: 80%;height: 20%; background: url("../images/furniture/furniture12.jpg") no-repeat center / cover; border-radius: 40px;}
 
 #header .gnb_wrap.on .nav_btm_sns .sns{width: 60px; height: 60px; background: no-repeat center; background-size: cover; position: absolute; bottom: 20px;}
 #header .gnb_wrap.on .nav_btm_sns p{position: absolute; bottom: 80px; font-size: 24px; right: 20px;}
@@ -95,6 +104,7 @@ body{font-family:  "애플 SD 고딕 Neo", "Apple SD Gothic Neo", "Noto Sans KR"
 #header.on{background: #47621e; box-shadow: 0 1px 10px 1px #000;}
 #header .logo{position: absolute; top: 10px; left: calc(50% - 55px); width: 110px; height: 60px; background: url("../images/logo/logo_white.png") no-repeat center; background-size: contain;}
 #header .logo a{display: block; width: 100%; height: 100%;}
+#header .util{display: block; width: 100%; height: 100%;}
 #header .util .menu_open_btn{position: absolute; top: calc(50% - 20px); right: 30px; width: 40px; height: 40px; background: url("../images/button/menu_white.png") no-repeat center; background-size: cover;}
 #header .gnb_wrap{display: none;}
 #header .gnb_wrap.on{display: block; position: fixed; right: 0; top: 0; width: 100%; height: 100%;}
@@ -114,7 +124,7 @@ body{font-family:  "애플 SD 고딕 Neo", "Apple SD Gothic Neo", "Noto Sans KR"
 .gnb_wrap.on #gnb > ul > li > a{font-size: 28px; font-weight: 600;}
 .gnb_wrap.on #gnb ul li ul li a{font-size: 18px; font-weight: 500;}
 
-.gnb_wrap.on .menu_photo{position: absolute; top: 500px; right: calc(50% - 450px); width: 900px;height: 200px; background: url("../images/furniture/furniture12.jpg") no-repeat center / cover; border-radius: 40px;}
+.gnb_wrap.on .menu_photo{position: absolute; top: 550px; right: 50%; transform: translateX(50%); width: 80%; height: 200px; background: url("../images/furniture/furniture12.jpg") no-repeat center / cover; border-radius: 40px;}
 
 #header .gnb_wrap.on .nav_btm_sns .sns{width: 60px; height: 60px; background: no-repeat center; background-size: cover; position: absolute; bottom: 20px;}
 #header .gnb_wrap.on .nav_btm_sns p{position: absolute; bottom: 80px; font-size: 24px; right: 20px;}
@@ -129,8 +139,7 @@ body{font-family:  "애플 SD 고딕 Neo", "Apple SD Gothic Neo", "Noto Sans KR"
     #header .logo a{display: block; width: 100%; height: 100%;}
     #header .util .menu_open_btn{position: absolute; top: calc(50% - 20px); right: 30px; width: 40px; height: 40px; background: url("../images/button/menu_white.png") no-repeat center; background-size: cover;}
     #header .gnb_wrap{display: none;}
-    #header .gnb_wrap.on{display: block;position: fixed; right: 0; top: 0; width: 100%x; height: 100%;}
-    
+    #header .gnb_wrap.on{display: block;position: fixed; right: 0; top: 0; width: 100%; height: 100%;}
     #header .gnb_wrap.on .menu_close_btn{position: absolute; top: 20px; right: 30px; width: 40px; height: 40px; background: url("../images/button/cancel.png") no-repeat center / cover;}
     .gnb_wrap.on .dark_bg{position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.432); z-index: -11;}
     .gnb_wrap.on .white_bg{position: fixed; right: 0; top: 0; width: 700px; height: 100%; background: #fff;}
@@ -150,8 +159,10 @@ body{font-family:  "애플 SD 고딕 Neo", "Apple SD Gothic Neo", "Noto Sans KR"
     #gnb > ul > li.on > a::after{transform: rotate(0deg);}
     #gnb ul li ul{visibility: hidden;overflow: hidden;max-height: 0;}
     .gnb_wrap.on #gnb ul li ul li{padding-top: 0;}
-    #gnb ul li ul li a{padding: 5px 40px;background: #47621e; color: #fff;} 
-
+    #gnb ul li ul li a{padding: 5px 40px;background: #777; color: #fff;} 
+    .gnb_wrap.on #gnb > ul > li:hover > a::after,.gnb_wrap.on #gnb > ul > li > a:focus::after{visibility: hidden;}
+    .gnb_wrap.on #gnb ul li ul li:hover a, .gnb_wrap.on #gnb ul li ul li a:focus{text-decoration: underline;}
+    .gnb_wrap.on #gnb ul li ul li:hover a::after, .gnb_wrap.on #gnb ul li ul li a:focus::after{visibility: hidden;}
     
     #header .gnb_wrap.on .nav_btm_sns .sns{width: 60px; height: 60px; background: no-repeat center; background-size: cover;}
     #header .gnb_wrap.on .nav_btm_sns p{font-size: 24px; color: #202020;}

@@ -3,11 +3,15 @@ $(document).ready(function () {
         $('#wrap').addClass('dark');
         $(this).prev().css('display', 'block');
         $(this).css('display', 'none');
+        $('.gnb_logo').children().find('img').attr({src: 'assets/images/logo/logo_white.png'});
+        $('.search').children().find('img').attr({src: 'assets/images/button/search_white.png'});
     });
     $('.light_btn').on('click', function () {
         $('#wrap').removeClass('dark');
         $(this).next().css('display', 'block');
         $(this).css('display', 'none');
+        $('.gnb_logo').children().find('img').attr({src: 'assets/images/logo/logo.png'});
+        $('.search').children().find('img').attr({src: 'assets/images/button/search.png'});
     });
     $(window).on('scroll', function () {
         const scrollY = $(this).scrollTop();
@@ -37,10 +41,6 @@ $(document).ready(function () {
     });
 
     $('#gnb > ul > li > a').on('click', function () {
-        if ($(this).next().length === 0) {  //뎁스1a 만 있는 경우
-          return true;
-        } else { //뎁스2 ul까지 있는 경우
-          // 열려질 ul의 높이를 스크립트로 지정하여 변수 설정 : li의 높이(margin포함), li의 개수 => li의 높이 x  li의 개수 = ul 높이를 알수 있다
           const liHei = $(this).next().children().outerHeight(true);
           const liSize = $(this).next().children().length;
           const ulHei = liHei * liSize;
@@ -61,9 +61,7 @@ $(document).ready(function () {
             }).parent().removeClass('on'); */
           } else { //열려져 있지 않은 경우: ul -> visibility -> animate() -> 부모li.on
             $(this).next().css({visibility: 'visible'}).stop().animate({maxHeight: ulHei}).parent().addClass('on');
-
           }
-        }
         return false;
       });
 });
