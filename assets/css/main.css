@@ -160,7 +160,7 @@
 #gallery ul{display: grid;grid-template-rows: 15% 21% 30%; grid-template-columns: 30% 30% 40%;}
 #gallery ul .list6, #gallery ul .list7, #gallery ul .list8, #gallery ul .list9, #gallery ul .list10, #gallery ul .list11{display: none;}
 
-#gallery ul li a{display: block;margin: 0.52vw;overflow: hidden;}
+#gallery ul li a{display: block; margin: 0.52vw;overflow: hidden;}
 #gallery ul .list1 a,  #gallery ul .list5 a,  #gallery ul .list6 a,  #gallery ul .list7 a{margin-top: 0;}
 #gallery ul .list1 a,  #gallery ul .list2 a{margin-left: 0;}
 #gallery ul .list7 a,  #gallery ul .list9 a,  #gallery ul .list11 a{margin-right: 0;}
@@ -204,6 +204,11 @@
     #cnt1{position: relative; width: 100vw; height: 100vh;}
 .swiper-container{width: 100vw; height: 100vh;}
 .swiper-container .swiper-slide{background: no-repeat center / cover; width: 100%; height: 100%;}
+.swiper-container .slide1{background-image: url("../images/01_slick-slide/slide1.jpg");}
+.swiper-container .slide2{background-image: url("../images/01_slick-slide/slide2.jpg");}
+.swiper-container .slide3{background-image: url("../images/01_slick-slide/slide3.jpg");}
+.swiper-container .slide4{background-image: url("../images/01_slick-slide/slide4.jpg");}
+.swiper-container .slide5{background-image: url("../images/01_slick-slide/slide5.jpg");}
 .swiper-container .controller{bottom: 50px;}
 .swiper-container .swiper-button-prev{left: 30px;}
 .swiper-container .swiper-button-next{left: 100px;}
@@ -241,13 +246,8 @@
 #gallery ul .list2{grid-row: 3 / 7;grid-column: 1;}
 #gallery ul .list3{grid-row: 3 / 5;grid-column: 2;}
 #gallery ul .list4{grid-row: 5 / 7;grid-column: 2;}
-#gallery ul .list5{display: none;}
-#gallery ul .list6{display: none;}
-#gallery ul .list7{display: none;}
-#gallery ul .list8{display: none;}
-#gallery ul .list9{display: none;}
-#gallery ul .list10{display: none;}
-#gallery ul .list11{display: none;}
+#gallery ul .list5, #gallery ul .list6, #gallery ul .list7, #gallery ul .list8, #gallery ul .list9, #gallery ul .list10, #gallery ul .list11{display: none;}
+
 
 /* info */
 #cnt6{width: 100%; margin: 80px auto;}
@@ -261,7 +261,7 @@
 #info ul li:hover div, #info ul li:focus div{background: rgba(0, 0, 0, 0.5);}
 #info ul li:hover div p, #info ul li:focus div p, #info ul li:hover div a, #info ul li:focus div a{visibility: visible;}
 #info ul li h3{font-size: 32px; font-weight: 700; text-shadow: 1px 1px 10px #000; position: relative; padding-top: 200px;}
-#info ul li:hover h3, #info ul li:focus h3{padding-top: 50px; text-shadow: none;}
+#info ul li:hover h3, #info ul li:focus h3{padding: 50px 0 0 10px; text-shadow: none;}
 #info ul li h3::after{content: ""; position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 90%; height: 2px; background: #fff;}
 #info ul li p{padding-top: 80px; font-size: 18px;}
 #info ul li a{display: block; font-size: 20px; font-weight: 700; margin-top: 100px;}
