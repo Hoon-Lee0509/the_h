@@ -50,9 +50,9 @@
 /* fSizeGreen */
 #fSizeGreen{position: relative; width: 100%; height: 600px; background: url("../images/03_fSize-greenery/greenary05.jpg") no-repeat center; background-size: cover; color: #fff;}
 #fSizeGreen *{position: absolute;}
-/* #fSizeGreen .box{top: 50px; left: 775px; width: 300px; height: 500px; background: rgba(0, 0, 0, 0.3); border-radius: 20px;} */
-#fSizeGreen h2{top: 100px; left: calc(50% - 50px); font-size: 60px;}
-#fSizeGreen p{top: 200px; left: calc(50% - 50px); font-size: 24px; word-break: keep-all;}
+#fSizeGreen .box{top: 50px; left: calc(50% - 150px); width: 300px; height: 500px; background: rgba(0, 0, 0, 0.3); border-radius: 20px;}
+#fSizeGreen h2{top: 100px; left: calc(50% - 50px); font-size: 80px; font-family: '나눔손글씨 펜'; color: #eafcd6;}
+#fSizeGreen p{top: 200px; left: calc(50% - 50px); width: 40%; font-size: 18px; word-break: keep-all;}
 #fSizeGreen a{bottom: 100px; left: calc(50% - 50px); font-size: 24px;}
 #fSizeGreen a:hover, #fSizeGreen a:focus{color: #dcf389;}
 
@@ -236,7 +236,7 @@
 #fSizeGreen *{position: absolute; left: 20px !important;}
 #fSizeGreen .box{top: 0; left: 0 !important; width: 100%; height: 500px; background: rgba(0, 0, 0, 0.3);}
 #fSizeGreen h2{top: 50px; font-size: 60px; font-weight: 400; font-family: '나눔손글씨 펜'; color: #eafcd6;}
-#fSizeGreen p{top: 150px; font-size: 18px; word-break: keep-all;}
+#fSizeGreen p{top: 150px; font-size: 18px; width: 90%; word-break: keep-all;}
 #fSizeGreen a{top: 350px; font-size: 20px;}
 #fSizeGreen a:hover, #fSizeGreen a:focus{color: #dcf389;}
 
