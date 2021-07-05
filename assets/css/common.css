@@ -1,9 +1,18 @@
 @charset "utf-8";
 
+@font-face {
+    font-family: 'HSBombaram';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.1/HSBombaram3_Thin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* #365902 #728C11 #A65F21 #F2BC8D #F2F2F2 */
+
 /* tag reset */
 body, ul, h1, h2, h3, h4, h5, h6, p, a, input[type="text"],button{margin: 0;padding: 0px;}
 ul{list-style: none;}
-h1, h2, h3, h4, h5, h6{font-size: inherit; font-family: inherit;font-weight: inherit;}
+h1, h2, h3, h4, h5, h6{font-size: inherit; font-family: 'HSBombaram';font-weight: inherit;}
 a:link, a:visited, a:hover, a:active{color: inherit; text-decoration: none;}
 button{font-size: inherit; border: none; background: none; cursor: pointer;}
 address{font-family: inherit; font-style: normal;}
@@ -17,15 +26,15 @@ img{border: none; vertical-align: top;}
 .f_r{float: right;}
 .clearfix::after{content: ""; display: block; clear: both;}
 #skip a{position: fixed; top: 0; left: -9999px; z-index: 1000;}
-#skip a:focus{left: 0; width: 100%; height: 60px; line-height: 60px; font-size: 18px; font-weight: 500; background: #47621e; color: #fff; text-align: center;}
+#skip a:focus{left: 0; width: 100%; height: 60px; line-height: 60px; font-size: 18px; font-weight: 500; background: #365902; color: #f2f2f2; text-align: center;}
 
 /* common layout */
 body{font-family:  "애플 SD 고딕 Neo", "Apple SD Gothic Neo", "Noto Sans KR", "맑은 고딕", "Malgun Gothic"; font-size: 16px; font-weight: 400; color: #101010;}
-#wrap{width: 100%;background: #fff;}
-#wrap.dark, #wrap.dark .gnb_wrap.on .white_bg,#wrap.dark #gnb{background: #101010; color: #fff;}
-#wrap.dark #footer, #wrap.dark #mFooter{background: #505050;}
-#wrap.dark #footer ul > li:not(:last-of-type)::after{background: #fff;}
-#wrap.dark .search input{border-color: #fff; background: #101010; color: #fff;}
+#wrap{width: 100%;background: #F2F2F2;}
+#wrap.dark, #wrap.dark .gnb_wrap.on .white_bg,#wrap.dark #gnb{background: #202020; color: #F2F2F2;}
+#wrap.dark #footer, #wrap.dark #mFooter{background: #202020;}
+#wrap.dark #footer ul > li:not(:last-of-type)::after{background: #F2F2F2;}
+#wrap.dark .search input{border-color: #F2F2F2; background: #202020; color: #F2F2F2;}
 #wrap.dark #header .gnb_wrap.on .nav_btm_sns .sns1{background-image: url("../images/sns/facebook_color.png");}
 #wrap.dark #header .gnb_wrap.on .nav_btm_sns .sns2{background-image: url("../images/sns/instagram_color.png");}
 #wrap.dark #header .gnb_wrap.on .nav_btm_sns .sns3{background-image: url("../images/sns/twitch_color.png");}
@@ -34,21 +43,23 @@ body{font-family:  "애플 SD 고딕 Neo", "Apple SD Gothic Neo", "Noto Sans KR"
 
 /* #header */
 #header{position: fixed; top: 0; right: 0; width: 100%; height: 80px; z-index: 999;}
-#header.on{background: #47621e; box-shadow: 0 1px 10px 1px #000;}
-#header .logo{position: absolute; top: 10px; left: calc(50% - 55px); width: 110px; height: 60px; background: url("../images/logo/logo_white.png") no-repeat center; background-size: cover;}
+#header.on{background: #F2F2F2; box-shadow: 0 1px 10px 1px #000;}
+#header .logo{position: absolute; top: 0; left: calc(50% - 200px); width: 400px; height: 80px; background: url("../images/logo/logo2_white.png") no-repeat center; background-size: cover;}
+#header.on .logo{background-image: url("../images/logo/logo2.png");}
 #header .logo a{display: block; width: 100%; height: 100%;}
 #header .util{position: relative; width: 100%; height: 100%;}
-#header .util .menu_open_btn{position: absolute; top: calc(50% - 20px); right: 30px; width: 40px; height: 40px; background: url("../images/button/menu_white.png") no-repeat center; background-size: cover;}
+#header .util .menu_open_btn{position: absolute; top: calc(50% - 15px); right: 30px; width: 30px; height: 30px; background: url("../images/button/menu_white.png") no-repeat center; background-size: cover;}
+#header.on .util .menu_open_btn{background-image: url("../images/button/menu.png");}
 #header .gnb_wrap{display: none;}
 #header .gnb_wrap.on{display: block;position: fixed; right: 0; top: 0; width: 700px; height: 100%;}
-#header .gnb_wrap.on h2{display: block; position: absolute; top: 10px; left: calc(50% - 70px);}
-#header .gnb_wrap.on .gnb_logo img{width: 110px; height: 60px;}
+#header .gnb_wrap.on h2{display: block; position: absolute; top: 0; left: calc(50% - 200px);}
+#header .gnb_wrap.on .gnb_logo img{width: 400px; height: 80px;}
 
-#header .gnb_wrap.on .menu_close_btn{position: absolute; top: 20px; right: 30px; width: 40px; height: 40px; background: url("../images/button/cancel.png") no-repeat center / cover;}
-.gnb_wrap.on .dark_bg{position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.432); z-index: -11;}
-.gnb_wrap.on .white_bg{position: fixed; right: 0; top: 0; width: 700px; height: 100%; background: #fff; box-shadow: -1px 0 10px #000; z-index: -10;}
+#header .gnb_wrap.on .menu_close_btn{position: absolute; top: 20px; right: 30px; width: 30px; height: 30px; background: url("../images/button/cancel.png") no-repeat center / cover;}
+.gnb_wrap.on .dark_bg{position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: #2020206e; z-index: -11;}
+.gnb_wrap.on .white_bg{position: fixed; right: 0; top: 0; width: 700px; height: 100%; background: #f2f2f2; box-shadow: -1px 0 10px #202020; z-index: -10;}
 .search{position: relative; width: 650px; height: 50px; margin: 100px 25px 30px;}
-.search label{position: absolute; top: 10px; left: 20px;}
+.search label{position: absolute; top: 15px; left: 20px;font-size: 24px;}
 .search input{width: 100%; height: 100%; border: 3px solid #47621e; border-radius: 5px; font-size: 24px;}
 .search a{position: absolute; top: 8px; right: 20px; width: 40px; height: 40px;}
 .search a img{width: 40px; height: 40px;}
@@ -56,14 +67,14 @@ body{font-family:  "애플 SD 고딕 Neo", "Apple SD Gothic Neo", "Noto Sans KR"
 .gnb_wrap.on #gnb ul{justify-content: space-around;}
 /* .gnb_wrap.on #gnb > ul > li:nth-child(even){margin-left: 50px;} */
 .gnb_wrap.on #gnb > ul > li > a{font-size: 28px; font-weight: 600;}
-.gnb_wrap.on #gnb > ul > li:hover > a,.gnb_wrap.on #gnb > ul > li > a:focus{position: relative; color: #20777a;}
-.gnb_wrap.on #gnb > ul > li:hover > a::after,.gnb_wrap.on #gnb > ul > li > a:focus::after{content: ""; position: absolute; top: -5px; right: -5px; width: 6px; height: 6px; border-radius: 3px; background: #20777a;}
+.gnb_wrap.on #gnb > ul > li:hover > a,.gnb_wrap.on #gnb > ul > li > a:focus{position: relative; color: #728C11;}
+.gnb_wrap.on #gnb > ul > li:hover > a::after,.gnb_wrap.on #gnb > ul > li > a:focus::after{content: ""; position: absolute; top: 0px; right: -5px; width: 6px; height: 6px; border-radius: 3px; background: #728C11;}
 .gnb_wrap.on #gnb ul li ul li{padding-top: 10px;}
 .gnb_wrap.on #gnb ul li ul li a{font-size: 18px; font-weight: 500;}
-.gnb_wrap.on #gnb ul li ul li:hover a, .gnb_wrap.on #gnb ul li ul li a:focus{color: #008000; position: relative;}
-.gnb_wrap.on #gnb ul li ul li:hover a::after, .gnb_wrap.on #gnb ul li ul li a:focus::after{content: ""; position: absolute; top: calc(50% - 10px); right: -25px; width: 20px; height: 20px; background: url("../images/icon/biodegradable.png") no-repeat center / cover; }
+.gnb_wrap.on #gnb ul li ul li:hover a, .gnb_wrap.on #gnb ul li ul li a:focus{color: #365902; position: relative;}
+.gnb_wrap.on #gnb ul li ul li:hover a::after, .gnb_wrap.on #gnb ul li ul li a:focus::after{content: ""; position: absolute; top: calc(50% - 7px); right: -25px; width: 15px; height: 15px; background: url("../images/icon/biodegradable.png") no-repeat center / cover; }
 
-.gnb_wrap.on .menu_photo{position: absolute; top: 60%; right: 50%; transform: translateX(50%); width: 80%;height: 20%; background: url("../images/furniture/furniture12.jpg") no-repeat center / cover; border-radius: 40px;}
+.gnb_wrap.on .menu_photo{position: absolute; top: 60%; right: calc(50% - 315px); width: 630px;height: 200px; background: url("../images/furniture/furniture12.jpg") no-repeat center / cover; border-radius: 40px;}
 
 #header .gnb_wrap.on .nav_btm_sns .sns{width: 60px; height: 60px; background: no-repeat center; background-size: cover; position: absolute; bottom: 20px;}
 #header .gnb_wrap.on .nav_btm_sns p{position: absolute; bottom: 80px; font-size: 24px; right: 20px;}
@@ -78,18 +89,17 @@ body{font-family:  "애플 SD 고딕 Neo", "Apple SD Gothic Neo", "Noto Sans KR"
 
 /* #footer */
 #mFooter{display: none;}
-#footer{position: relative; width: 100%; height: 400px; background: #e1f0ca;}
-#footer .f_wrap{width: 95%;margin: 0 auto;}
-#footer .com_name{padding-top: 50px; font-size: 24px; font-weight: 700;}
+#footer{position: relative; width: 100%; height: 400px; background: #728C11; text-align: center; color: #F2BC8D;}
+#footer .f_wrap{width: 100%; margin: 0 auto; line-height: 1.4;}
+#footer .com_name{padding-top: 50px; font-size: 36px; font-weight: 700;letter-spacing: 1.5;}
 #footer address{padding-top: 30px;}
 #footer .copy{padding: 20px 0;}
+#footer ul{justify-content: center;}
 #footer ul > li{position: relative; margin-right: 30px;}
-#footer ul > li:not(:last-of-type)::after{content: ""; position: absolute; top: 5px; right: -15px; width: 2px; height: 16px; background: #101010;}
-#footer .partner{float: right; padding-top: 50px; font-size: 24px; font-weight: 700; text-align: right;}
-#footer .partner img{width: 150px; height: 50px;}
+#footer ul > li:not(:last-of-type)::after{content: ""; position: absolute; top: 5px; right: -15px; width: 2px; height: 16px; background: #F2BC8D;}
 
 /* btn */
-#modeBtn *{position: fixed; bottom: 30px; box-shadow: 0.2px 0.1px 3px 0.1px #444; border-radius: 12px; z-index: 800;}
+#modeBtn *{position: fixed; bottom: 30px; box-shadow: 0.2px 0.1px 3px 0.1px #404040; border-radius: 12px; z-index: 800;}
 #modeBtn .top_btn{right: 60px; width: 45px; height: 45px; background: url("../images/button/top_black.png") no-repeat center / cover; display: none;}
 #modeBtn .top_btn:hover, #modeBtn .top_btn:focus{background-image: url("../images/button/top_color.png");}
 #modeBtn .dark_btn, #modeBtn .light_btn{right: 10px; width: 45px; height: 45px;background: no-repeat center / cover;}
@@ -101,21 +111,21 @@ body{font-family:  "애플 SD 고딕 Neo", "Apple SD Gothic Neo", "Noto Sans KR"
 @media screen and (max-width: 1080px) {
     /* #header */
 #header{position: fixed; width: 100%; height: 80px; z-index: 999;}
-#header.on{background: #47621e; box-shadow: 0 1px 10px 1px #000;}
-#header .logo{position: absolute; top: 10px; left: calc(50% - 55px); width: 110px; height: 60px; background: url("../images/logo/logo_white.png") no-repeat center; background-size: contain;}
+#header.on{background: #f2f2f2; box-shadow: 0 1px 10px 1px #202020;}
+#header .logo{position: absolute; top: 10px; left: calc(50% - 150px); width: 300px; height: 60px; background: url("../images/logo/logo2_white.png") no-repeat center; background-size: contain;}
 #header .logo a{display: block; width: 100%; height: 100%;}
 #header .util{display: block; width: 100%; height: 100%;}
-#header .util .menu_open_btn{position: absolute; top: calc(50% - 20px); right: 30px; width: 40px; height: 40px; background: url("../images/button/menu_white.png") no-repeat center; background-size: cover;}
+#header .util .menu_open_btn{position: absolute; top: calc(50% - 20px); right: 30px; width: 30px; height: 30px; background: url("../images/button/menu_white.png") no-repeat center; background-size: cover;}
 #header .gnb_wrap{display: none;}
 #header .gnb_wrap.on{display: block; position: fixed; right: 0; top: 0; width: 100%; height: 100%;}
-#header .gnb_wrap.on h2{display: block; position: absolute; top: 10px; left: calc(50% - 70px);}
-#header .gnb_wrap.on .gnb_logo img{width: 110px; height: 60px;}
+#header .gnb_wrap.on h2{display: block; position: absolute; top: 10px; left: calc(50% - 150px);}
+#header .gnb_wrap.on .gnb_logo img{width: 300px; height: 60px;}
 
 #header .gnb_wrap.on .menu_close_btn{position: absolute; top: 20px; right: 30px; width: 40px; height: 40px; background: url("../images/button/cancel.png") no-repeat center / cover;}
-.gnb_wrap.on .white_bg{position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: #fff; box-shadow: -1px 0 10px #000; z-index: -10;}
+.gnb_wrap.on .white_bg{position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: #f2f2f2; box-shadow: -1px 0 10px #202020; z-index: -10;}
 .search{position: relative; width:90%; height: 60px;}
-.search label{position: absolute; top: 10px; left: 20px;}
-.search input{width: 100%; height: 100%; border: 3px solid #47621e; border-radius: 5px; font-size: 24px;}
+.search label{position: absolute; top: 15px; left: 20px;font-size: 24px;}
+.search input{width: 100%; height: 100%; border: 3px solid #47621e; border-radius: 5px; }
 .search a{position: absolute; top: 8px; right: 20px; width: 40px; height: 40px;}
 .search a img{width: 40px; height: 40px; line-height: 60px;}
 .gnb_wrap.on #gnb{width: 100%;}
@@ -135,22 +145,24 @@ body{font-family:  "애플 SD 고딕 Neo", "Apple SD Gothic Neo", "Noto Sans KR"
 }
 
 @media screen and (max-width: 770px) {
-    #header .logo{position: absolute; top: 10px; left: 50%; transform: translateX(-50%); width: 110px; height: 60px; background: url("../images/logo/logo_white.png") no-repeat center; background-size: contain;}
+    #header .logo{position: absolute; top: 20px; left: 50%; transform: translateX(-50%); width: 200px; height: 40px; background: url("../images/logo/logo2_white.png") no-repeat center; background-size: contain;}
     #header .logo a{display: block; width: 100%; height: 100%;}
-    #header .util .menu_open_btn{position: absolute; top: calc(50% - 20px); right: 30px; width: 40px; height: 40px; background: url("../images/button/menu_white.png") no-repeat center; background-size: cover;}
+    #header .util .menu_open_btn{position: absolute; top: calc(50% - 13px); right: 30px; width: 26px; height: 26px; background: url("../images/button/menu_white.png") no-repeat center; background-size: cover;}
     #header .gnb_wrap{display: none;}
     #header .gnb_wrap.on{display: block;position: fixed; right: 0; top: 0; width: 100%; height: 100%;}
-    #header .gnb_wrap.on .menu_close_btn{position: absolute; top: 20px; right: 30px; width: 40px; height: 40px; background: url("../images/button/cancel.png") no-repeat center / cover;}
-    .gnb_wrap.on .dark_bg{position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.432); z-index: -11;}
-    .gnb_wrap.on .white_bg{position: fixed; right: 0; top: 0; width: 700px; height: 100%; background: #fff;}
+    #header .gnb_wrap.on h2{display: block; position: absolute; top: 15px; left: calc(50% - 100px);}
+    #header .gnb_wrap.on .gnb_logo img{width: 200px; height: 40px;}
+    #header .gnb_wrap.on .menu_close_btn{position: absolute; top: 23px; right: 30px; width: 26px; height: 26px; background: url("../images/button/cancel.png") no-repeat center / cover;}
+    .gnb_wrap.on .dark_bg{position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: #2020206e; z-index: -11;}
+    .gnb_wrap.on .white_bg{position: fixed; right: 0; top: 0; width: 700px; height: 100%; background: #f2f2f2;}
     .search{position: relative; width: 90%; height: 50px; margin: 80px 25px 30px;}
-    .search label{position: absolute; top: 5px; left: 20px;}
-    .search input{width: 100%; height: 100%; border: 2px solid #47621e; font-size: 24px; border-radius: 5px; background: #fff;}
+    .search label{position: absolute; top: 8px; left: 20px; font-size: 24px;}
+    .search input{width: 100%; height: 100%; border: 2px solid #728C11; font-size: 24px; border-radius: 5px; background: #f2f2f2;}
     .search a{position: absolute; top: 8px; right: 5px; width: 40px; height: 40px;}
     .search a img{width: 40px; height: 40px;}
     .gnb_wrap.on .menu_photo{display: none;} 
 
-    #gnb{position: fixed;top: 135px;left: 0;width: 100%;height: 100%;overflow-y: auto;background: #fff;color: #202020;}
+    #gnb{position: fixed;top: 135px;left: 0;width: 100%;height: 100%;overflow-y: auto;background: #f2f2f2;color: #202020;}
     #gnb > ul{flex-direction: column;padding-top: 20px;}
     #gnb a{display: block;height: 35px;line-height: 35px;}
     #gnb > ul > li > a{position: relative;padding: 15px 40px;font-size: 18px;font-weight: 500;}
@@ -159,9 +171,9 @@ body{font-family:  "애플 SD 고딕 Neo", "Apple SD Gothic Neo", "Noto Sans KR"
     #gnb > ul > li.on > a::after{transform: rotate(0deg);}
     #gnb ul li ul{visibility: hidden;overflow: hidden;max-height: 0;}
     .gnb_wrap.on #gnb ul li ul li{padding-top: 0;}
-    #gnb ul li ul li a{padding: 5px 40px;background: #777; color: #fff;} 
+    #gnb ul li ul li a{padding: 5px 40px;background: #728C11; color: #f2f2f2;} 
+    #gnb ul li ul li a:hover, #gnb ul li ul li a:focus{color: #F2BC8D !important; text-decoration: none;} 
     .gnb_wrap.on #gnb > ul > li:hover > a::after,.gnb_wrap.on #gnb > ul > li > a:focus::after{visibility: hidden;}
-    .gnb_wrap.on #gnb ul li ul li:hover a, .gnb_wrap.on #gnb ul li ul li a:focus{text-decoration: underline;}
     .gnb_wrap.on #gnb ul li ul li:hover a::after, .gnb_wrap.on #gnb ul li ul li a:focus::after{visibility: hidden;}
     
     #header .gnb_wrap.on .nav_btm_sns .sns{width: 60px; height: 60px; background: no-repeat center; background-size: cover;}
@@ -173,12 +185,10 @@ body{font-family:  "애플 SD 고딕 Neo", "Apple SD Gothic Neo", "Noto Sans KR"
     
     /* #footer */
     #footer{display: none;}
-    #mFooter{display: block; width: 100%; height: 700px; background: #e1f0ca;}
-    #mFooter .com_name{padding-top: 50px; font-size: 18px; font-weight: 700;}
+    #mFooter{display: block; width: 100%; height: 700px; background: #728C11; text-align: center; color: #f2bc8d;}
+    #mFooter .com_name{padding-top: 50px; font-size: 32px; font-weight: 700; letter-spacing: 1.5;}
     #mFooter address{padding-top: 30px;}
     #mFooter .copy{padding: 20px 0;}
-    #mFooter ul:not(:nth-of-type(1)) > li{margin-right: 30px; font-weight: 700;}
-    #mFooter ul:not(:nth-of-type(1)) > li + li{margin-top: 5px;}
-    #mFooter .partner{padding-top: 50px; font-size: 24px; font-weight: 700;}
-    #mFooter .partner img{width: 150px; height: 50px;}
+    #mFooter ul.d_f{width: 80%; margin: 0 auto; flex-wrap: wrap;justify-content: center; font-weight: 600; line-height: 1.5;}
+    #mFooter ul.d_f > li{width: 150px;}
 }

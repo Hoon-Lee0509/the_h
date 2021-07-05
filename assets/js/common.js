@@ -64,4 +64,13 @@ $(document).ready(function () {
           }
         return false;
       });
+
+      $('#search').on({
+        focus: function(){
+          $(this).prev().css('left', -9999);
+        },
+        blur: function(){
+          if ($(this).val() === '') $(this).prev().css('left', 20);
+        }
+      });
 });

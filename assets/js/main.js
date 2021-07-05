@@ -6,7 +6,7 @@ $(document).ready(function () {
         $(window).on('resize', function () {
           clearTimeout();
           timer = setTimeout(function () {
-            if ($(this).width() >= 769) {
+            if ($(this).width() >= 770) {
               $acco.removeClass('m').addClass('pc');
               $acco.children().eq(3).addClass('on');
             } else if ($(this).width() >= 320) {
@@ -14,7 +14,7 @@ $(document).ready(function () {
             }
           }, 100);
           timer = setTimeout(function () {
-            if ($(this).width() >= 771 && $(this).width() <= 1079) {
+            if ($(this).width() >= 770 && $(this).width() <= 1080) {
               $('.wwfp').children().attr({src: 'assets/images/06_viewmore/viewmore01_tab.png'});
               $('.recruit').children().attr({src: 'assets/images/06_viewmore/viewmore02_tab.png'});
               $('.members').children().attr({src: 'assets/images/06_viewmore/viewmore03_tab.png'});
