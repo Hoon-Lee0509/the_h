@@ -51,7 +51,7 @@
 #fSizeGreen{position: relative; width: 100%; height: 600px; background: url("../images/03_fSize-greenery/greenary05.jpg") no-repeat center; background-size: cover; color: #fff;}
 #fSizeGreen *{position: absolute;}
 #fSizeGreen .box{top: 50px; left: calc(50% - 150px); width: 300px; height: 500px; background: rgba(0, 0, 0, 0.3); border-radius: 20px;}
-#fSizeGreen h2{top: 100px; left: calc(50% - 50px); font-size: 48px; color: #728C11; text-shadow: 2px 2px 1px #f2f2f2;}
+#fSizeGreen h2{top: 100px; left: calc(50% - 50px); font-size: 80px; color: #F2BC8D;/*  text-shadow: 2px 2px 1px #f2f2f2; */}
 #fSizeGreen p{top: 200px; left: calc(50% - 50px); width: 40%; font-size: 18px; word-break: keep-all;}
 #fSizeGreen a{bottom: 100px; left: calc(50% - 50px); font-size: 20px;}
 #fSizeGreen a:hover, #fSizeGreen a:focus{color: #F2BC8D;}
@@ -131,7 +131,7 @@
 .swiper-container .controller{position: absolute; bottom: 50px;}
 .swiper-container .swiper-button-prev{left: 50px;}
 .swiper-container .swiper-button-next{left: 150px;}
-.swiper-container .swiper-slide .bg_box{width: 100%; height: 100%; background: rgba(0, 0, 0, 0.3); top: 0; left: 0;}
+.swiper-container .swiper-slide .bg_box{width: 100%; height: 100%; background: rgba(0, 0, 0, 0.3); top: 0; left: 0; border-radius: 0;}
 .swiper-container .swiper-slide .txt_box{width: 100%; height: 100%; color: #fff; text-align: right;}
 .swiper-container .swiper-slide .txt_box h3{font-size: 60px; margin: 120px 100px 30px 0; color: rgb(255, 232, 181);}
 .swiper-container .swiper-slide .txt_box p{font-size: 32px; margin: 0 100px 80px 0; word-break: keep-all;}
@@ -177,8 +177,8 @@
 #gallery ul{display: grid;grid-template-rows: 0.5fr 0.5fr 0 0 0 0; grid-template-columns: 1fr 1fr 1fr 0 0 0;}
 #gallery ul .list1{grid-row: 1 / 2; grid-column: 1 / 3;}
 /* #gallery ul .list2{grid-row: 2 / 4; grid-column: 1 / 2;} */
-#gallery ul .list3{grid-row: 2 / 3; grid-column: 2 / 3;}
-#gallery ul .list4{grid-row: 2 / 3; grid-column: 1 / 2;}
+#gallery ul .list3{grid-row: 2 / 3; grid-column: 1 / 2;}
+#gallery ul .list4{grid-row: 2 / 3; grid-column: 2 / 3;}
 #gallery ul .list5{grid-row: 1 / 4; grid-column: 3 / 4;}
 #gallery ul .list2, #gallery ul .list6, #gallery ul .list7, #gallery ul .list8, #gallery ul .list9, #gallery ul .list10, #gallery ul .list11{visibility: hidden;}
 
@@ -191,10 +191,10 @@
 #fSizeYouth{position: relative; height: 600px; background: url("../images/05_fSize-2030/for2030_2.jpg") no-repeat fixed center; background-size: cover; color: #fff; text-align: left;}
 #fSizeYouth div{width: 80%; padding-left: 120px;}
 #fSizeYouth h2{font-size: 28px; padding: 30px 0 50px;}
-#fSizeYouth h2 span{font-size: 60px;color: #f3f5a0; font-weight: 700;}
+#fSizeYouth h2 span{font-size: 60px;color: #F2BC8D; font-weight: 700;}
 #fSizeYouth p{font-size: 24px;padding-bottom: 150px;}
 #fSizeYouth a{font-size: 20px;}
-#fSizeYouth a:hover, #fSizeYouth a:focus{color: #f3f5a0;}
+#fSizeYouth a:hover, #fSizeYouth a:focus{color: #F2BC8D;}
 
 /* info */
 #cnt6{width: 95%; margin: 80px auto;}
@@ -234,30 +234,30 @@
 .swiper-container .controller{bottom: 50px;}
 .swiper-container .swiper-button-prev{left: 30px;}
 .swiper-container .swiper-button-next{left: 100px;}
-.swiper-container .swiper-slide .bg_box{width: 100vw; height: 100vh; background: rgba(0, 0, 0, 0.3); top: 0; left: 0;}
-.swiper-container .swiper-slide .txt_box{width: 90%; height: 50%; margin: 1px auto; padding-top: 100px;color: #fff; text-align: left;}
-.swiper-container .swiper-slide .txt_box h3{font-size: 48px; font-weight: 700; margin: 0 0 70px 0; color: rgb(255, 232, 181);}
-.swiper-container .swiper-slide .txt_box p{font-size: 20px;margin: 0 0 60px 0; word-break: keep-all;}
-.swiper-container .swiper-slide .txt_box a{font-size: 20px; margin: 0;}
+.swiper-container .swiper-slide .bg_box{width: 100vw; height: 100vh; background: rgba(0, 0, 0, 0.3); top: 0; left: 0; border-radius: 0;}
+.swiper-container .swiper-slide .txt_box{width: 90%; height: 50%; margin: 1px auto; padding-top: 120px;color: #fff; text-align: left;}
+.swiper-container .swiper-slide .txt_box h3{font-size: 36px; font-weight: 700; margin: 0 0 30px 0; color: rgb(255, 232, 181);}
+.swiper-container .swiper-slide .txt_box p{font-size: 16px;margin: 0 0 50px 0; word-break: keep-all;}
+.swiper-container .swiper-slide .txt_box a{font-size: 16px; margin: 0;}
 
 
 #mainAcdn h2{font-size: 48px; margin: 0 auto 50px; width: 80%; text-align: center; }
 .accordion.m{width: 100%;height:auto;}
 .accordion.m li{width: 100%;height: 100px; background-position: 30%; position: relative;}
 .accordion.m li div{position: absolute; bottom: 0; left: 0; width: 93.9%; padding: 20px 20px;}
-.accordion.m li h3{font-size: 38px;}
-.accordion.m li p{font-size: 20px; word-break: keep-all; margin-top: 20px;}
-.accordion.m li a{font-size: 20px;}
+.accordion.m li h3{font-size: 36px;}
+.accordion.m li p{font-size: 16px; word-break: keep-all; margin-top: 20px;}
+.accordion.m li a{font-size: 16px;}
 .accordion.m li.on{width: 100%;height: 480px;}
 
 /* fSizeGreen */
 #fSizeGreen{position: relative; width: 100%; height: 500px; background: url("../images/03_fSize-greenery/greenary05.jpg") no-repeat 30%; background-size: cover; color: #fff;}
 #fSizeGreen *{position: absolute; left: 20px !important;}
-#fSizeGreen .box{top: 0; left: 0 !important; width: 100%; height: 500px; background: rgba(0, 0, 0, 0.3);}
+#fSizeGreen .box{top: 0; left: 0 !important; width: 100%; height: 500px; background: rgba(0, 0, 0, 0.3); border-radius: 0;}
 #fSizeGreen h2{top: 50px; font-size: 48px;}
-#fSizeGreen p{top: 150px; font-size: 10px; width: 90%; word-break: keep-all;}
-#fSizeGreen a{top: 350px; font-size: 20px;}
-#fSizeGreen a:hover, #fSizeGreen a:focus{color: #dcf389;}
+#fSizeGreen p{top: 150px; font-size: 16px; width: 90%; word-break: keep-all;}
+#fSizeGreen a{top: 350px; font-size: 16px;}
+#fSizeGreen a:hover, #fSizeGreen a:focus{color: #F2BC8D;}
 
 /* gallery */
 #gallery h2{text-align: center; font-size: 48px; font-weight: 700; margin-top:80px;}
@@ -265,8 +265,8 @@
 /* vw 단위로 설정하여 창크기에 따라 줄어들어요 */
 #gallery ul{grid-template-rows: 0.5fr 0.5fr 0.5fr 0 0 0; grid-template-columns: 0.5fr 0.5fr 0 0 0 0;}
 #gallery ul .list1{grid-row: 1 / 2;grid-column: 1 / 3;}
-#gallery ul .list3{grid-row: 2 / 3;grid-column: 2 / 3;}
-#gallery ul .list4{grid-row: 2 / 3;grid-column: 1 / 2;}
+#gallery ul .list3{grid-row: 2 / 3;grid-column: 1 / 2;}
+#gallery ul .list4{grid-row: 2 / 3;grid-column: 2 / 3;}
 #gallery ul .list10{visibility: visible; grid-row: 3 / 4;grid-column: 1 / 3;}
 #cnt4 > a{font-size: 20px;}
 
@@ -290,19 +290,19 @@
 /* fSizeYouth */
 #fSizeYouth{position: relative; height: 500px; background: url("../images/05_fSize-2030/for2030_2.jpg") no-repeat fixed center; background-size: cover; color: #fff; text-align: left;}
 #fSizeYouth div{width: 80%; padding-left: 20px;}
-#fSizeYouth h2{font-size: 28px; padding: 30px 0 10px;}
-#fSizeYouth h2 span{font-size: 60px;color: #f3f5a0; font-weight: 700;}
-#fSizeYouth p{font-size: 20px;padding-bottom: 70px;}
-#fSizeYouth a{font-size: 20px;}
-#fSizeYouth a:hover, #fSizeYouth a:focus{color: #f3f5a0;}
+#fSizeYouth h2{font-size: 28px; padding: 10px 0 10px;}
+#fSizeYouth h2 span{font-size: 60px;color: #F2BC8D; font-weight: 700;}
+#fSizeYouth p{font-size: 16px;padding-bottom: 50px;}
+#fSizeYouth a{font-size: 16px;}
+#fSizeYouth a:hover, #fSizeYouth a:focus{color: #F2BC8D;}
 
 /* info */
 #cnt6 h2{font-size: 48px;}
 #info ul li{width: 95%; margin: 0 auto 10px; font-weight: 500; text-align: center; height: 500px;}
 #info ul li div p, #info ul li div a{left: 50%;}
-#info ul li div h3{font-size: 48px;}
-#info ul li p{top: 50%; transform: translate(-50%, -50%); width: 90%; word-break: keep-all; font-size: 20px;}
-#info ul li a{display: block; top: 70%; transform: translateX(-50%); width: 80%; font-size: 20px;}
+#info ul li div h3{font-size: 36px;}
+#info ul li p{top: 50%; transform: translate(-50%, -50%); width: 90%; word-break: keep-all; font-size: 16px;}
+#info ul li a{display: block; top: 70%; transform: translateX(-50%); width: 80%; font-size: 16px;}
 #info ul li:hover h3, #info ul li:focus h3{text-align: center;}
 
 }
