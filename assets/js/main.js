@@ -14,7 +14,7 @@ $(document).ready(function () {
             }
           }, 100);
           timer = setTimeout(function () {
-            if ($(this).width() >= 770 && $(this).width() <= 1080) {
+            if ($(this).width() >= 754 && $(this).width() <= 1080) {
               $('.wwfp').children().attr({src: 'assets/images/06_viewmore/viewmore01_tab.png'});
               $('.recruit').children().attr({src: 'assets/images/06_viewmore/viewmore02_tab.png'});
               $('.members').children().attr({src: 'assets/images/06_viewmore/viewmore03_tab.png'});

@@ -24,7 +24,7 @@ $(document).ready(function () {
         else $('.top_btn').css('display', 'none');
 
         $('.top_btn').on('click', function () {
-            $(window).scrollTop(0);
+            $('html, body').stop().animate({scrollTop: 0}, 1000);
         });
     });
 
@@ -73,4 +73,6 @@ $(document).ready(function () {
           if ($(this).val() === '') $(this).prev().css('left', 20);
         }
       });
+
+      /* $('#cnt1 .swiper-container'). */
 });

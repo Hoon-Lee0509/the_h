@@ -11,12 +11,12 @@
 .swiper-container .slide5{background-image: url("../images/01_slick-slide/slide5.jpg");}
 .swiper-container .controller{position: absolute; bottom: 50px;}
 .swiper-container .swiper-button-prev,.swiper-container .swiper-button-next{width: 50px;height: 50px; background: no-repeat center / cover;}
-.swiper-container .swiper-button-prev{left: 50px; background-image: url("../images/button/prev.png");}
-.swiper-container .swiper-button-next{left: 150px; background-image: url("../images/button/next.png");}
+.swiper-container .swiper-button-prev{left: 50px; background-image: url("../images/button/left-arrow.png");}
+.swiper-container .swiper-button-next{left: 150px; background-image: url("../images/button/right-arrow.png");}
 .swiper-container .swiper-button-prev::after, .swiper-container .swiper-button-next::after{content: "";}
 .swiper-container .swiper-slide .bg_box{width: 45%; height: 40%; background: rgba(0, 0, 0, 0.4); position: absolute; top: 30%; right: 100px; border-radius: 50px;}
-.swiper-container .swiper-slide .txt_box{width: 100%; height: 100%; color: #fff; text-align: right;}
-.swiper-container .swiper-slide .txt_box h3{font-size: 48px; font-weight: 700; margin: 0 50px 30px 0; color: #f2f2f2;}
+.swiper-container .swiper-slide .txt_box{width: 100%; height: 100%; color: #f2f2f2; text-align: right;}
+.swiper-container .swiper-slide .txt_box h3{font-size: 48px; font-weight: 700; margin: 20px 50px 30px 0; color: #f2f2f2;}
 .swiper-container .swiper-slide .txt_box p{font-size: 18px; margin: 0 50px 80px 0;}
 .swiper-container .swiper-slide .txt_box a{display: block; font-size: 20px; margin-right: 50px;}
 .swiper-container .swiper-slide .txt_box a:hover, .swiper-container .swiper-slide .txt_box a:focus{color: #F2BC8D; position: relative;}
@@ -28,8 +28,8 @@
 
 /* 공통 */
 .accordion li{background: no-repeat 50% / cover;transition:all 0.5s;}/* 배경위치는 알아서 제어하기 */
-.accordion li div{visibility: hidden;}
-.accordion li.on div{visibility: visible; background-color: rgba(0, 0, 0, 0.493);font-size: 24px; color: #fff;}
+.accordion li div{visibility: hidden; cursor: pointer;}
+.accordion li.on div{visibility: visible; background-color: rgba(0, 0, 0, 0.493);font-size: 24px; color: #f2f2f2; cursor: auto;}
 .accordion .list1{background-image: url("../images/02_accordion/accordion1.jpg")}
 .accordion .list2{background-image: url("../images/02_accordion/accordion2.jpg")}
 .accordion .list3{background-image: url("../images/02_accordion/accordion3.jpg")}
@@ -37,25 +37,23 @@
 
 /* pc, 태블릿 */
 .accordion.pc{display: flex;width: 90%;height: 650px; margin: 80px auto;overflow: hidden;}
-.accordion.pc li{width: 10%;height: 650px; cursor: pointer;}
+.accordion.pc li{width: 10%;height: 650px;}
 /* .accordion.pc li + li{margin-left: 10px;} */
 .accordion.pc li.on{width: 70%;}
-.accordion.pc li div{width: 100%; height: 100%;}
-.accordion.pc li.on h3{font-size: 48px; font-weight: 700; color: #fff; text-shadow: 1px 0.5px 10px #000; padding: 30px 0 0 30px;}
-.accordion.pc li.on div p{font-size: 18px; margin-top: 20px; padding-left: 30px;}
-.accordion.pc li.on div a{display: block; width: 120px; margin-top: 80px; font-size: 20px; padding-left: 30px;}
-.accordion.pc li.on div a:hover, .accordion.pc li.on div a:focus{position: relative; color: #F2BC8D;}
-.accordion.pc li.on div a:hover::after, .accordion.pc li.on div a:focus::after{content: ""; position: absolute; top: 0; right: -10px; width: 10px; height: 10px; border-radius: 5px; background: #F2BC8D;}
+.accordion.pc li div{width: 100%; height: 100%; }
+.accordion.pc li.on h3{font-size: 48px; font-weight: 700; color: #f2f2f2; text-shadow: 1px 0.5px 10px #000; padding: 30px 0 0 30px;}
+.accordion.pc li.on div p{font-size: 18px; margin-top: 20px; padding-left: 30px;width: 80%; word-break: keep-all;}
+.accordion.pc li.on div a{display: block; width: 120px; height: 40px; line-height: 40px; margin-top: 80px; font-size: 20px; text-align: center; margin-left: 30px; border: 2px solid #f2f2f2; border-radius: 8px; transition: background 0.5s;}
+.accordion.pc li.on div a:hover, .accordion.pc li.on div a:focus{position: relative; color: #365902; background: #f2f2f2;}
 
 /* fSizeGreen */
-#fSizeGreen{position: relative; width: 100%; height: 600px; background: url("../images/03_fSize-greenery/greenary05.jpg") no-repeat center; background-size: cover; color: #fff;}
+#fSizeGreen{position: relative; width: 100%; height: 600px; background: url("../images/03_fSize-greenery/greenary05.jpg") no-repeat center; background-size: cover; color: #f2f2f2;}
 #fSizeGreen *{position: absolute;}
 #fSizeGreen .box{top: 50px; left: calc(50% - 150px); width: 300px; height: 500px; background: rgba(0, 0, 0, 0.3); border-radius: 20px;}
 #fSizeGreen h2{top: 100px; left: calc(50% - 50px); font-size: 80px; color: #F2BC8D;/*  text-shadow: 2px 2px 1px #f2f2f2; */}
 #fSizeGreen p{top: 200px; left: calc(50% - 50px); width: 40%; font-size: 18px; word-break: keep-all;}
-#fSizeGreen a{bottom: 100px; left: calc(50% - 50px); font-size: 20px;}
-#fSizeGreen a:hover, #fSizeGreen a:focus{color: #F2BC8D;}
-#fSizeGreen a:hover::after, #fSizeGreen a:focus::after{content: ""; position: absolute; top: 0; right: -10px; width: 10px; height: 10px; border-radius: 5px; background: #F2BC8D;}
+#fSizeGreen a{bottom: 100px; left: calc(50% - 50px); width: 120px; height: 40px; line-height: 40px; font-size: 20px; border: 1px solid #f2f2f2; text-align: center; border-radius: 8px; transition: background 0.5s;}
+#fSizeGreen a:hover, #fSizeGreen a:focus{color: #365902; background: #f2f2f2;}
 
 /* gallery */
 #gallery h2{text-align: center; font-size: 60px; font-weight: 700; margin-top:80px;}
@@ -88,8 +86,8 @@
 #cnt4 > a:hover::after, #cnt4 > a:focus::after{content: ""; position: absolute; top: 0; right: -10px; width: 10px; height: 10px; border-radius: 5px; background: #F2BC8D;}
 
 /* fSizeYouth */
-#fSizeYouth{position: relative; height: 600px; background: url("../images/05_fSize-2030/for2030_2.jpg") no-repeat fixed center; background-size: cover; color: #fff; text-align: left;}
-#fSizeYouth div{width: 80%; padding-left: 120px;}
+#fSizeYouth{position: relative; height: 600px; background: url("../images/05_fSize-2030/for2030_2.jpg") no-repeat fixed center; background-size: cover; color: #f2f2f2; text-align: left;}
+#fSizeYouth div{width: 80%; padding-left: 5%;}
 #fSizeYouth h2{font-size: 28px; padding: 30px 0 50px;}
 #fSizeYouth h2 span{font-size: 60px;color: #728C11; font-weight: 700;}
 #fSizeYouth p{font-size: 18px;padding-bottom: 150px;}
@@ -101,7 +99,7 @@
 #cnt6{width: 95%; margin: 80px auto;}
 #cnt6 h2{width: 96%; padding-bottom: 50px; text-align: center; font-size: 60px; font-weight: 700;}
 #info ul{justify-content: space-around;}
-#info ul li{color: #fff; font-weight: 500; text-align: center; position: relative; overflow: hidden;}
+#info ul li{color: #f2f2f2; font-weight: 500; text-align: center; position: relative; overflow: hidden;}
 #info ul li img{transition: transform 0.5s;}
 #info ul li:hover img, #info ul li:focus img{transform: scale(1.1);}
 #info ul li div{position: absolute; top: 0; left: 0;width: 100%; height: 100%;  transition: all 0.5s;}
@@ -109,14 +107,10 @@
 #info ul li:hover div, #info ul li:focus div{background: rgba(0, 0, 0, 0.5);}
 #info ul li:hover div p, #info ul li:focus div p, #info ul li:hover div a, #info ul li:focus div a{visibility: visible;}
 #info ul li h3{font-size: 48px; font-weight: 700; text-shadow: 1px 1px 10px #000; position: relative; padding-top: 200px;}
-#info ul li:hover h3, #info ul li:focus h3{padding-top: 50px; text-shadow: none;}
-#info ul li p{padding-top: 80px; font-size: 18px;}
-#info ul li a{display: block; height: 50px; font-size: 20px; font-weight: 700; margin: 100px auto 0;}
-#info ul li.wwfp a{width: 180px;}
-#info ul li.recruit a{width: 220px;}
-#info ul li.members a{width: 250px;}
-#info ul li a:hover, #info ul li a:focus{color: #F2BC8D; position: relative;}
-#info ul li a:hover::after, #info ul li a:focus::after{content: ""; position: absolute; top: 0; right: -10px; width: 10px; height: 10px; border-radius: 5px; background: #F2BC8D;}
+#info ul li:hover h3, #info ul li:focus h3{padding-top: 10px; text-shadow: none;}
+#info ul li p{position: absolute; bottom: 200px; right: calc(50% - 200px); width: 400px; height: 100px; font-size: 18px;}
+#info ul li a{display: block; position: absolute; bottom: 20px; right: 50%; transform: translateX(-50%); height: 50px; font-size: 20px; font-weight: 700; margin: 0 auto;}
+#info ul li a:hover, #info ul li a:focus{color: #F2BC8D;}
 
 
 
@@ -132,10 +126,10 @@
 .swiper-container .swiper-button-prev{left: 50px;}
 .swiper-container .swiper-button-next{left: 150px;}
 .swiper-container .swiper-slide .bg_box{width: 100%; height: 100%; background: rgba(0, 0, 0, 0.3); top: 0; left: 0; border-radius: 0;}
-.swiper-container .swiper-slide .txt_box{width: 100%; height: 100%; color: #fff; text-align: right;}
-.swiper-container .swiper-slide .txt_box h3{font-size: 60px; margin: 120px 100px 30px 0; color: rgb(255, 232, 181);}
-.swiper-container .swiper-slide .txt_box p{font-size: 32px; margin: 0 100px 80px 0; word-break: keep-all;}
-.swiper-container .swiper-slide .txt_box a{font-size: 32px; margin-right: 100px;}
+.swiper-container .swiper-slide .txt_box{ width: 100%; height: 100%; color: #f2f2f2; text-align: right;}
+.swiper-container .swiper-slide .txt_box h3{font-size: 60px; margin-top: 100px;color: rgb(255, 232, 181);}
+.swiper-container .swiper-slide .txt_box p{font-size: 24px; word-break: keep-all;}
+.swiper-container .swiper-slide .txt_box a{font-size: 24px;}
 
 /* acdn */
 #cnt2{width: 100%; height: 100%; margin: 80px auto;}
@@ -144,7 +138,7 @@
 /* 공통 */
 .accordion li{background: no-repeat 50% / cover;transition:all 0.5s;}/* 배경위치는 알아서 제어하기 */
 .accordion li div{visibility: hidden;}
-.accordion li.on div{visibility: visible; background-color: rgba(0, 0, 0, 0.493);font-size: 24px; color: #fff;}
+.accordion li.on div{visibility: visible; background-color: rgba(0, 0, 0, 0.493);font-size: 24px; color: #f2f2f2;}
 .accordion .list1{background-image: url("../images/02_accordion/accordion1.jpg")}
 .accordion .list2{background-image: url("../images/02_accordion/accordion2.jpg")}
 .accordion .list3{background-image: url("../images/02_accordion/accordion3.jpg")}
@@ -152,23 +146,23 @@
 
 /* pc, 태블릿 */
 .accordion.pc{display: flex;width: 90%;height: 650px; margin: 80px auto;overflow: hidden;}
-.accordion.pc li{width: 10%;height: 650px; cursor: pointer;}
+.accordion.pc li{width: 10%;height: 650px;}
 /* .accordion.pc li + li{margin-left: 10px;} */
 .accordion.pc li.on{width: 70%;}
 .accordion.pc li div{width: 100%; height: 100%;}
 .accordion.pc li h3{font-size: 18px; font-weight: 400;}
-.accordion.pc li.on h3{font-size: 36px; font-weight: 700; color: #fff; text-shadow: 1px 0.5px 10px #000; padding-top: 30px;}
-.accordion.pc li.on div p{font-size: 18px; padding-left: 50px;}
-.accordion.pc li.on div a{display: block; padding-top: 80px; padding-left: 50px;}
+.accordion.pc li.on h3{font-size: 36px; font-weight: 700; color: #f2f2f2; text-shadow: 1px 0.5px 10px #000; padding-top: 30px;}
+.accordion.pc li.on div p{font-size: 18px; padding-left: 30px;}
+.accordion.pc li.on div a{display: block; font-size: 18px;}
 
 /* fSizeGreen */
-#fSizeGreen{position: relative; width: 100%; height: 600px; background: url("../images/03_fSize-greenery/greenary05.jpg") no-repeat center; background-size: cover; color: #fff;}
+#fSizeGreen{position: relative; width: 100%; height: 600px; background: url("../images/03_fSize-greenery/greenary05.jpg") no-repeat center; background-size: cover; color: #f2f2f2;}
 #fSizeGreen *{position: absolute;}
 /* #fSizeGreen .box{top: 50px; left: 775px; width: 300px; height: 500px; background: rgba(0, 0, 0, 0.3); border-radius: 20px;} */
 #fSizeGreen h2{top: 100px; left: calc(50% - 50px); font-size: 48px;}
-#fSizeGreen p{top: 200px; left: calc(50% - 50px); font-size: 20px; word-break: keep-all;}
+#fSizeGreen p{top: 200px; left: calc(50% - 50px); width: 435px; font-size: 20px; word-break: keep-all;}
 #fSizeGreen a{bottom: 100px; left: calc(50% - 50px); font-size: 18px;}
-#fSizeGreen a:hover, #fSizeGreen a:focus{color: #F2BC8D;}
+#fSizeGreen a:hover, #fSizeGreen a:focus{color: #365902;}
 
 /* gallery */
 #gallery h2{text-align: center; font-size: 48px; font-weight: 700; margin-top:80px;}
@@ -188,29 +182,29 @@
 #cnt4 > a:hover::after, #cnt4 > a:focus::after{content: ""; position: absolute; top: 0; right: -5px; width: 8px; height: 8px; border-radius: 5px; background: #F2BC8D;}
 
 /* fSizeYouth */
-#fSizeYouth{position: relative; height: 600px; background: url("../images/05_fSize-2030/for2030_2.jpg") no-repeat fixed center; background-size: cover; color: #fff; text-align: left;}
-#fSizeYouth div{width: 80%; padding-left: 120px;}
+#fSizeYouth{position: relative; height: 600px; background: url("../images/05_fSize-2030/for2030_2.jpg") no-repeat fixed center; background-size: cover; color: #f2f2f2; text-align: left;}
+#fSizeYouth div{width: 80%; padding-left: 20px;}
 #fSizeYouth h2{font-size: 28px; padding: 30px 0 50px;}
 #fSizeYouth h2 span{font-size: 60px;color: #F2BC8D; font-weight: 700;}
-#fSizeYouth p{font-size: 24px;padding-bottom: 150px;}
+#fSizeYouth p{font-size: 20px; padding-bottom: 150px; word-break: keep-all;}
 #fSizeYouth a{font-size: 20px;}
-#fSizeYouth a:hover, #fSizeYouth a:focus{color: #F2BC8D;}
+#fSizeYouth a:hover, #fSizeYouth a:focus{color: #365902;}
 
 /* info */
 #cnt6{width: 95%; margin: 80px auto;}
 #cnt6 h2{padding-bottom: 50px; text-align: center; font-size: 60px; font-weight: 700;}
 #info ul{flex-direction: column; margin-bottom: 10px;}
-#info ul li{color: #fff; font-weight: 500; text-align: left; position: relative; overflow: hidden; width: 100%; height: 300px;}
+#info ul li{color: #f2f2f2; font-weight: 500; text-align: left; position: relative; overflow: hidden; width: 100%; height: 300px;}
 #info ul li img{transition: transform 0.5s;}
 #info ul li:hover img, #info ul li:focus img{transform: scale(1.1);}
 #info ul li div{position: absolute; top: 0; left: 0;width: 100%; height: 100%;  transition: all 0.5s;}
-#info ul li div p, #info ul li div a{visibility: hidden; position: absolute;}
 #info ul li:hover div, #info ul li:focus div{background: rgba(0, 0, 0, 0.5);}
+#info ul li div p, #info ul li div a{visibility: hidden; text-align: right; position: absolute;}
+#info ul li p{top: 0; right: 1%; padding-top: 20px; font-size: 18px;}
+#info ul li a{display: block; top: 100px; right: 1%; transform: translateX(0); font-size: 20px; font-weight: 700; margin-top: 100px;}
 #info ul li:hover div p, #info ul li:focus div p, #info ul li:hover div a, #info ul li:focus div a{visibility: visible;}
 #info ul li h3{font-size: 32px; font-weight: 700; text-shadow: 1px 1px 10px #000; position: relative; padding: 200px 0 0 20px;}
-#info ul li:hover h3, #info ul li:focus h3{padding-top: 50px; text-shadow: none;}
-#info ul li p{top: 0; left: 50%; padding-top: 20px; font-size: 18px;}
-#info ul li a{display: block; top: 100px; left: 50%; font-size: 20px; font-weight: 700; margin-top: 100px;}
+#info ul li:hover h3, #info ul li:focus h3{padding-top: 10px; text-shadow: none;}
 
 }
 
@@ -235,7 +229,7 @@
 .swiper-container .swiper-button-prev{left: 30px;}
 .swiper-container .swiper-button-next{left: 100px;}
 .swiper-container .swiper-slide .bg_box{width: 100vw; height: 100vh; background: rgba(0, 0, 0, 0.3); top: 0; left: 0; border-radius: 0;}
-.swiper-container .swiper-slide .txt_box{width: 90%; height: 50%; margin: 1px auto; padding-top: 120px;color: #fff; text-align: left;}
+.swiper-container .swiper-slide .txt_box{width: 90%; height: 50%; margin: 1px auto; padding-top: 120px;color: #f2f2f2; text-align: left;}
 .swiper-container .swiper-slide .txt_box h3{font-size: 36px; font-weight: 700; margin: 0 0 30px 0; color: rgb(255, 232, 181);}
 .swiper-container .swiper-slide .txt_box p{font-size: 16px;margin: 0 0 50px 0; word-break: keep-all;}
 .swiper-container .swiper-slide .txt_box a{font-size: 16px; margin: 0;}
@@ -251,7 +245,7 @@
 .accordion.m li.on{width: 100%;height: 480px;}
 
 /* fSizeGreen */
-#fSizeGreen{position: relative; width: 100%; height: 500px; background: url("../images/03_fSize-greenery/greenary05.jpg") no-repeat 30%; background-size: cover; color: #fff;}
+#fSizeGreen{position: relative; width: 100%; height: 500px; background: url("../images/03_fSize-greenery/greenary05.jpg") no-repeat 30%; background-size: cover; color: #f2f2f2;}
 #fSizeGreen *{position: absolute; left: 20px !important;}
 #fSizeGreen .box{top: 0; left: 0 !important; width: 100%; height: 500px; background: rgba(0, 0, 0, 0.3); border-radius: 0;}
 #fSizeGreen h2{top: 50px; font-size: 48px;}
@@ -273,7 +267,7 @@
 /* info */
 #cnt6{width: 100%; margin: 80px auto;}
 #info ul{flex-direction: column;}
-#info ul li{color: #fff; font-weight: 500; text-align: center; position: relative; overflow: hidden;}
+#info ul li{color: #f2f2f2; font-weight: 500; text-align: center; position: relative; overflow: hidden;}
 #info ul li img{transition: transform 0.5s;}
 #info ul li:hover img, #info ul li:focus img{transform: scale(1.1);}
 #info ul li div{position: absolute; top: 0; left: 0;width: 100%; height: 100%;  transition: all 0.5s;}
@@ -288,11 +282,11 @@
 #info ul li a:hover, #info ul li a:focus{color: #bccca5; text-decoration: underline;}
 
 /* fSizeYouth */
-#fSizeYouth{position: relative; height: 500px; background: url("../images/05_fSize-2030/for2030_2.jpg") no-repeat fixed center; background-size: cover; color: #fff; text-align: left;}
+#fSizeYouth{position: relative; height: 500px; background: url("../images/05_fSize-2030/for2030_2.jpg") no-repeat fixed center; background-size: cover; color: #f2f2f2; text-align: left;}
 #fSizeYouth div{width: 80%; padding-left: 20px;}
 #fSizeYouth h2{font-size: 28px; padding: 10px 0 10px;}
 #fSizeYouth h2 span{font-size: 60px;color: #F2BC8D; font-weight: 700;}
-#fSizeYouth p{font-size: 16px;padding-bottom: 50px;}
+#fSizeYouth p{width: 435px; font-size: 16px;padding-bottom: 50px;}
 #fSizeYouth a{font-size: 16px;}
 #fSizeYouth a:hover, #fSizeYouth a:focus{color: #F2BC8D;}
 
@@ -302,7 +296,7 @@
 #info ul li div p, #info ul li div a{left: 50%;}
 #info ul li div h3{font-size: 36px;}
 #info ul li p{top: 50%; transform: translate(-50%, -50%); width: 90%; word-break: keep-all; font-size: 16px;}
-#info ul li a{display: block; top: 70%; transform: translateX(-50%); width: 80%; font-size: 16px;}
-#info ul li:hover h3, #info ul li:focus h3{text-align: center;}
+#info ul li a{display: block; top: 70%; transform: translateX(-50%); width: 80%; font-size: 16px;text-align: center;}
+#info ul li:hover p, #info ul li:hover a, #info ul li:focus p, #info ul li:focus a{text-align: center;}
 
 }
