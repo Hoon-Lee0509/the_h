@@ -35,6 +35,7 @@ body{font-family:  "애플 SD 고딕 Neo", "Apple SD Gothic Neo", "Noto Sans KR"
 #wrap.dark #footer, #wrap.dark #mFooter{background: #292929;}
 #wrap.dark #footer ul > li:not(:last-of-type)::after{background: #F2F2F2;}
 #wrap.dark .search input{border-color: #F2F2F2; background: #202020; color: #F2F2F2;}
+#wrap.dark #header .search label{color: #f2f2f2;}
 #wrap.dark #header .gnb_wrap.on .nav_btm_sns .sns1{background-image: url("../images/sns/facebook_color.png");}
 #wrap.dark #header .gnb_wrap.on .nav_btm_sns .sns2{background-image: url("../images/sns/instagram_color.png");}
 #wrap.dark #header .gnb_wrap.on .nav_btm_sns .sns3{background-image: url("../images/sns/twitch_color.png");}
@@ -55,7 +56,7 @@ body{font-family:  "애플 SD 고딕 Neo", "Apple SD Gothic Neo", "Noto Sans KR"
 #header{position: fixed; top: 0; right: 0; width: 100%; height: 80px; z-index: 999; background-color: #20202063;}
 /* #header logo */
 #header.on{background-color: #F2F2F2; box-shadow: 0 1px 10px 1px #000;}
-#header .logo{position: absolute; top: 0; left: calc(50% - 200px); width: 400px; height: 80px; background: url("../images/logo/logo2_white.png") no-repeat center; background-size: cover; z-index: 999;}
+#header .logo{position: absolute; top: 10px; left: calc(50% - 150px); width: 300px; height: 60px; background: url("../images/logo/logo2_white.png") no-repeat center; background-size: cover; z-index: 999;}
 #header.on .logo{background-image: url("../images/logo/logo2.png");}
 #header .logo a{display: block; width: 100%; height: 100%;}
 /* #header util */
@@ -95,7 +96,7 @@ body{font-family:  "애플 SD 고딕 Neo", "Apple SD Gothic Neo", "Noto Sans KR"
 #header .gnb_wrap.on .nav_btm_sns .sns4:hover{background-image: url("../images/sns/youtube_color.png");}
 
 #header .search{position: relative; width: 650px; height: 50px; margin: 100px 25px 30px;}
-#header .search label{position: absolute; top: 0; left: 0;font-size: 24px; width: 100%; height: 100%; line-height: 50px;}
+#header .search label{position: absolute; top: 0; left: 20px;font-size: 24px; width: 100%; height: 100%; line-height: 50px; color: #365902;}
 #header .search input{width: 100%; height: 100%; border: 3px solid #365902; border-radius: 5px; font-size: 24px; box-sizing: border-box;}
 #header .search a{position: absolute; top: 5px; right: 10px; width: 40px; height: 40px;}
 #header .search a img{width: 40px; height: 40px;}
@@ -121,10 +122,10 @@ body{font-family:  "애플 SD 고딕 Neo", "Apple SD Gothic Neo", "Noto Sans KR"
     /* #header */
 #header{position: fixed; width: 100%; height: 80px; z-index: 999;  background: none;}
 #header.on{background: #f2f2f2; box-shadow: 0 1px 10px 1px #202020;}
-#header .logo{position: absolute; top: 10px; left: calc(50% - 150px); width: 300px; height: 60px; background: url("../images/logo/logo2_white.png") no-repeat center; background-size: contain;}
+#header .logo{position: absolute; top: 15px; left: calc(50% - 125px); width: 250px; height: 50px; background: url("../images/logo/logo2_white.png") no-repeat center; background-size: contain;}
 #header .logo a{display: block; width: 100%; height: 100%;}
 #header .util{display: block; width: 100%; height: 100%;}
-#header .util .menu_open_btn{position: absolute; top: calc(50% - 20px); right: 30px; width: 30px; height: 30px; background: url("../images/button/menu_white.png") no-repeat center; background-size: cover;}
+#header .util .menu_open_btn{position: absolute; top: calc(50% - 15px); right: 30px; width: 30px; height: 30px; background: url("../images/button/menu_white.png") no-repeat center; background-size: cover;}
 #header .gnb_wrap{display: none;}
 #header .gnb_wrap.on{display: block; position: fixed; right: 0; top: 0; width: 100%; height: 100%;}
 #header .gnb_wrap.on h2{display: block; position: absolute; top: 10px; left: calc(50% - 150px);}
@@ -171,8 +172,8 @@ body{font-family:  "애플 SD 고딕 Neo", "Apple SD Gothic Neo", "Noto Sans KR"
     #header .gnb_wrap.on .dark_bg{position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: #2020206e; z-index: -11;}
     #header .gnb_wrap.on .white_bg{position: fixed; right: 0; top: 0; width: 700px; height: 100%; background: #f2f2f2;}
     #header .search{position: relative; width: 90%; height: 50px; margin: 80px 25px 30px;}
-    #header .search label{position: absolute; top: 0px; left: 0; font-size: 24px; color: #728c11;line-height: 50px;}
-    #header .search input{width: 100%; height: 100%; border: 2px solid #728C11; font-size: 24px; border-radius: 5px; background: #f2f2f2;}
+    #header .search label{position: absolute; top: 0; left: 10px; font-size: 24px;line-height: 50px;}
+    #header .search input{width: 100%; height: 100%; border: 2px solid #365902; font-size: 24px; border-radius: 5px; background: #f2f2f2;}
     #header .search a{position: absolute; top: 11px; right: 5px; width: 40px; height: 40px;}
     #header .search a img{width: 28px; height: 28px;}
     #header .gnb_wrap.on .menu_photo{display: none;} 
@@ -191,6 +192,12 @@ body{font-family:  "애플 SD 고딕 Neo", "Apple SD Gothic Neo", "Noto Sans KR"
     #mGnb ul li ul li a:hover, #mGnb ul li ul li a:focus{color: #F2BC8D !important; text-decoration: none;} 
     .gnb_wrap.on #mGnb > ul > li:hover > a::after,.gnb_wrap.on #mGnb > ul > li > a:focus::after{visibility: hidden;}
     .gnb_wrap.on #mGnb ul li ul li:hover a::after, .gnb_wrap.on #mGnb ul li ul li a:focus::after{visibility: hidden;}
+
+    #wrap.dark #mGnb{background: #202020;color: #f2f2f2;}
+    #wrap.dark #mGnb > ul > li> a::before, #mGnb > ul > li > a::after{background: #f2f2f2;}
+    #wrap.dark #mGnb ul li ul li a{background: #404040;}
+    #wrap.dark #header .search label, #wrap.dark #header .gnb_wrap.on .nav_btm_sns p{color: #f2f2f2;}
+    
     
     #header .gnb_wrap.on .nav_btm_sns .sns{width: 60px; height: 60px; background: no-repeat center; background-size: cover;}
     #header .gnb_wrap.on .nav_btm_sns p{font-size: 24px; color: #202020;}

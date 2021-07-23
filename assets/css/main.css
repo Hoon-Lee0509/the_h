@@ -117,14 +117,14 @@
 
 
 
-
 @media screen and (max-width: 1080px) {
     /* header */
 #cnt1{position: relative;}
 .swiper-container{width: 100vw; height: 100vh; overflow: hidden;}
-.swiper-container .controller{position: absolute; bottom: 50px;}
+.swiper-container .controller{bottom: 50px;}
+.swiper-container .swiper-button-prev,.swiper-container .swiper-button-next{width: 40px;height: 40px;}
 .swiper-container .swiper-button-prev{left: 50px;}
-.swiper-container .swiper-button-next{left: 150px;}
+.swiper-container .swiper-button-next{left: 120px;}
 .swiper-container .swiper-slide .bg_box{width: 100%; height: 100%; background: rgba(0, 0, 0, 0.3); top: 0; left: 0; border-radius: 0;}
 .swiper-container .swiper-slide .txt_box{ width: 100%; height: 100%; color: #f2f2f2; text-align: right;}
 .swiper-container .swiper-slide .txt_box h3{font-size: 60px; margin-top: 100px;color: rgb(255, 232, 181);}
@@ -225,23 +225,27 @@
 .swiper-container .slide3{background-image: url("../images/01_slick-slide/slide3.jpg");}
 .swiper-container .slide4{background-image: url("../images/01_slick-slide/slide4.jpg");}
 .swiper-container .slide5{background-image: url("../images/01_slick-slide/slide5.jpg");}
-.swiper-container .controller{bottom: 50px;}
+.swiper-container .controller{bottom: 30px;}
+.swiper-container .swiper-button-prev,.swiper-container .swiper-button-next{width: 30px;height: 30px;}
 .swiper-container .swiper-button-prev{left: 30px;}
-.swiper-container .swiper-button-next{left: 100px;}
+.swiper-container .swiper-button-next{left: 80px;}
 .swiper-container .swiper-slide .bg_box{width: 100vw; height: 100vh; background: rgba(0, 0, 0, 0.3); top: 0; left: 0; border-radius: 0;}
 .swiper-container .swiper-slide .txt_box{width: 90%; height: 50%; margin: 1px auto; padding-top: 120px;color: #f2f2f2; text-align: left;}
 .swiper-container .swiper-slide .txt_box h3{font-size: 36px; font-weight: 700; margin: 0 0 30px 0; color: rgb(255, 232, 181);}
 .swiper-container .swiper-slide .txt_box p{font-size: 16px;margin: 0 0 50px 0; word-break: keep-all;}
-.swiper-container .swiper-slide .txt_box a{font-size: 16px; margin: 0; width: 45%;}
+.swiper-container .swiper-slide .txt_box a{display: inline; font-size: 16px; margin: 0; width: 45%; padding-bottom: 3px; border-bottom: 2px solid transparent;}
+.swiper-container .swiper-slide .txt_box a:hover, .swiper-container .swiper-slide .txt_box a:focus{color: #F2BC8D; border-color: #f2bc8d;}
+.swiper-container .swiper-slide .txt_box a:hover::after, .swiper-container .swiper-slide .txt_box a:focus::after{visibility: hidden;}
 
 #mainAcdn h2{font-size: 48px; margin: 0 auto 50px; width: 80%; text-align: center; }
 .accordion.m{width: 100%;height:auto;}
 .accordion.m li{width: 100%;height: 100px; background-position: 30%; position: relative;}
 .accordion.m li + li{margin-top: 8px;}
 .accordion.m li div{position: absolute; bottom: 0; left: 0; width: 93.9%; padding: 20px 20px;}
-.accordion.m li h3{font-size: 36px;}
-.accordion.m li p{font-size: 16px; word-break: keep-all; margin-top: 20px;}
-.accordion.m li a{font-size: 16px;}
+.accordion.m li div h3{font-size: 36px;}
+.accordion.m li div p{font-size: 16px; word-break: keep-all; margin-top: 20px;}
+.accordion.m li div a{font-size: 16px; padding: 2px 5px; border: 1px solid #f2f2f2; border-radius: 4px; transition: background 0.5s;}
+.accordion.m li.on div a:hover, .accordion.m li.on div a:focus{position: relative; color: #365902; background: #f2f2f2;}
 .accordion.m li.on{width: 100%;height: 480px;}
 
 /* fSizeGreen */
@@ -250,8 +254,16 @@
 #fSizeGreen .box{top: 0; left: 0 !important; width: 100%; height: 500px; background: rgba(0, 0, 0, 0.3); border-radius: 0;}
 #fSizeGreen h2{top: 50px; font-size: 48px;}
 #fSizeGreen p{top: 150px; font-size: 16px; width: 90%; word-break: keep-all;}
-#fSizeGreen a{top: 350px; font-size: 16px;}
-#fSizeGreen a:hover, #fSizeGreen a:focus{color: #F2BC8D;}
+#fSizeGreen a{top: 350px; font-size: 16px; height: 30px; line-height: 30px; border: 1px solid #f2f2f2; text-align: center; border-radius: 4px;}
+
+/* fSizeGreen
+#fSizeGreen{position: relative; width: 100%; height: 600px; background: url("../images/03_fSize-greenery/greenary05.jpg") no-repeat center; background-size: cover; color: #f2f2f2;}
+#fSizeGreen *{position: absolute;}
+#fSizeGreen .box{top: 50px; left: calc(50% - 150px); width: 300px; height: 500px; background: rgba(0, 0, 0, 0.3); border-radius: 20px;}
+#fSizeGreen h2{top: 100px; left: calc(50% - 50px); font-size: 80px; color: #F2BC8D; text-shadow: 2px 2px 1px #f2f2f2;}
+#fSizeGreen p{top: 200px; left: calc(50% - 50px); width: 40%; font-size: 18px; word-break: keep-all;}
+#fSizeGreen a{bottom: 100px; left: calc(50% - 50px); width: 120px; height: 40px; line-height: 40px; font-size: 20px; border: 1px solid #f2f2f2; text-align: center; border-radius: 8px; transition: background 0.5s;}
+#fSizeGreen a:hover, #fSizeGreen a:focus{color: #365902; background: #f2f2f2;} */
 
 /* gallery */
 #gallery h2{text-align: center; font-size: 48px; font-weight: 700; margin-top:80px;}
@@ -279,7 +291,7 @@
 
 #info ul li p{padding-top: 80px; font-size: 18px;}
 #info ul li a{display: block; font-size: 20px; font-weight: 700; margin-top: 100px;}
-#info ul li a:hover, #info ul li a:focus{color: #bccca5; text-decoration: underline;}
+
 
 /* fSizeYouth */
 #fSizeYouth{position: relative; height: 500px; background: url("../images/05_fSize-2030/for2030_2.jpg") no-repeat fixed center; background-size: cover; color: #f2f2f2; text-align: left;}
@@ -296,7 +308,7 @@
 #info ul li div p, #info ul li div a{left: 50%;}
 #info ul li div h3{font-size: 36px;}
 #info ul li p{top: 50%; transform: translate(-50%, -50%); width: 90%; word-break: keep-all; font-size: 16px;}
-#info ul li a{display: block; top: 70%; transform: translateX(-50%); width: 80%; font-size: 16px;text-align: center;}
+#info ul li a{display: inline-block; top: 70%; transform: translateX(-50%); width: 80%; font-size: 16px;text-align: center;}
 #info ul li:hover p, #info ul li:hover a, #info ul li:focus p, #info ul li:focus a{text-align: center;}
 
 }
